@@ -1,0 +1,83 @@
+[
+    {
+        "State": "Baden-Württemberg",
+        "caseNumbers": "159013"
+    },
+
+    {
+        "State": "Bayern",
+        "caseNumbers": "222360"
+    },
+
+    {
+        "State": "Berlin",
+        "caseNumbers": "68508"
+    },
+
+    {
+        "State": "Brandenburg",
+        "caseNumbers": "21123"
+    },
+
+    {
+        "State": "Bremen",
+        "caseNumbers": "10499"
+    },
+
+    
+    {
+        "State": "Hamburg",
+        "caseNumbers": "25775"
+    },
+    
+    {
+        "State": "Hessen",
+        "caseNumbers": "92825"
+    },
+
+    {
+        "State": "Mecklenburg-Vorpommern",
+        "caseNumbers": "6446"
+    },
+
+    {
+        "State": "Niedersachsen",
+        "caseNumbers": "170904"
+    },
+
+    {
+        "State": "Nordrhein-Westfalen",
+        "caseNumbers": "276697"
+    },
+
+ 
+    {
+        "State": "Rheinland-Pfalz",
+        "caseNumbers": "47140"
+    },
+
+    {
+        "State": "Saarland",
+        "caseNumbers": "13212"
+    },
+
+    {
+        "State": "Sachsen",
+        "caseNumbers": "63535"
+    },
+
+    {
+        "State": "Saxony-Anhalt",
+        "caseNumbers": "13826"
+    },
+
+    {
+        "State": "Schleswig-Holstein",
+        "caseNumbers": "15082"
+    },
+
+    {
+        "State": "Thüringen",
+        "caseNumbers": "19463"
+    }
+]
