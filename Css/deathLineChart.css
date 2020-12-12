@@ -1,0 +1,55 @@
+body {
+  font: 10px sans-serif;
+}
+path {
+  fill: none;
+  stroke: #4682b4;
+  stroke-width: 2;
+}
+.domain,
+.tick line {
+  stroke: gray;
+  stroke-width: 1;
+}
+.circle {
+  fill: white;
+  stroke: steelblue;
+  stroke-width: 0.5px;
+}
+.area {
+  fill: steelblue;
+  stroke: none;
+  opacity: 0.1;
+}
+.zeroline {
+  fill: none;
+  stroke: red;
+  stroke-width: 0.5px;
+  stroke-dasharray: 5 5;
+}
+.zerolinetext {
+  fill: red;
+}
+.overlay {
+  fill: none;
+  stroke: none;
+  pointer-events: all;
+}
+.focusLine {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 0.5px;
+}
+.focusCircle {
+  fill: red;
+}
+#dialog {
+  width: 110px;
+  height: 60px;
+  background-color: #4682b4;
+  position: fixed;
+  top: 50px;
+  left: 600px;
+  opacity: 0;
+  line-height: 20px;
+}

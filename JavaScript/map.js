@@ -1,9 +1,3 @@
-<!DOCTYPE html>
-<meta charset="utf-8">
-<script src="https://d3js.org/d3.v4.js"></script>
-</body>
-
-<script>
 var width = 600,
     height = 500,
     focused = null,
@@ -157,6 +151,3 @@ function clickText(d) {
       .attr("transform", "scale("+1+")translate("+0+","+0+")")
       .style("stroke-width", 1.00+"px");
 }
-</script>
-
-</body>
