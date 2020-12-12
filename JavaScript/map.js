@@ -7,7 +7,7 @@ var color = d3.scaleLinear()
   .domain([0,100])      // <--- min and MAX of your value
   .range(["#ffffff","000000"]);
 
-var svg = d3.select("body")
+var svg = d3.select("#map")
   .append("svg")
     .attr("width", width)
     .attr("height", height);

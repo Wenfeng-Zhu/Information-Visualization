@@ -1,0 +1,24 @@
+#container{
+    display: grid;
+    grid-template-columns: 50% 50% ;
+    grid-template-rows: 50% 50%;
+}
+.item {
+    font-size: 4em;
+    text-align: center;
+    border: 1px solid #e5e4e9;
+}
+
+.item-1 {
+    /*background-color: #ef342a;*/
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+
+.item-2 {
+    /*background-color: #f68f26;*/
+}
+
+.item-3 {
+    background-color: #4ba946;
+}
