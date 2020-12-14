@@ -31,7 +31,8 @@
 
         title: {
             top: 30,
-            text: 'Confirmed status in each state',
+            text: '2016年某人每天的步数',
+            subtext: '数据纯属虚构',
             left: 'center',
             textStyle: {
                 color: '#fff'
@@ -43,7 +44,7 @@
         legend: {
             top: '30',
             left: '100',
-            data: ['confirm', 'Top 12'],
+            data: ['步数', 'Top 12'],
             textStyle: {
                 color: '#fff'
             }
@@ -97,7 +98,7 @@
         }],
         series: [
             {
-                name: 'confirm',
+                name: '步数',
                 type: 'scatter',
                 coordinateSystem: 'calendar',
                 data: data,
@@ -109,7 +110,7 @@
                 }
             },
             {
-                name: 'confirm',
+                name: '步数',
                 type: 'scatter',
                 coordinateSystem: 'calendar',
                 calendarIndex: 1,
