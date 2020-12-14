@@ -8,5 +8,6 @@ TODO:
 - Connect the event monitoring of the map and the calendar view, that is, the calendar view is updated after clicking a specific state on the map.
 - Implement of cross-domain transfer of data in calendar view.
 - Interactive display of multi-dimensional data————Pie chart based on polar coordinates / Histogram with double ordinates
+- Lack of state epidemic prevention policy data
 - Implementation of the database
 - Cross-domain data interaction based on cloud server
