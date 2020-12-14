@@ -1,6 +1,5 @@
 
-
-var myChart = echarts.init(document.getElementById('eachState'));
+var calenderChart = echarts.init(document.getElementById('eachState'));
 function getVirtulData(year) {
     year = year || '2020';
     var date = +echarts.number.parseDate(year + '-01-01');
@@ -15,6 +14,7 @@ function getVirtulData(year) {
     }
     return data;
 }
+
 
 var data = getVirtulData(2020);
 
@@ -160,4 +160,4 @@ option = {
         }
     ]
 };
-myChart.setOption(option);
+calenderChart.setOption(option);
