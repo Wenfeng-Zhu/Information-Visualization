@@ -144,6 +144,93 @@
                 "Date":"2020/04/27",
                 "Policy":"Maskenpflicht."
             }
+        ],
+        "DE-BY":[
+            {
+                "Date":"2020/03/16",
+                "Policy":"Mit Bekanntmachung wurden öffentliche Veranstaltungen und Versammlungen, der Betrieb sämtlicher Einrichtungen, die der Freizeitgestaltung dienen untersagt."
+            },
+
+            {
+                "Date":"2020/04/23",
+                "Policy":"Großveranstaltungen wurden bundesweit bis Ende August 2020 unt020 untersagt."
+            },
+
+            {
+                "Date":"2020/05/05",
+                "Policy":"gab Ministerpräsident Söder weitere Lockerungsbeschlüsse des bayerischen Kabinetts bekannt."
+            },
+
+            {
+                "Date":"2020/06/16",
+                "Policy":"Erste Lockerungen für Veranstaltungen beschloss das Kabinett in seiner Sitzung."
+            },
+
+            {
+                "Date":"2020/07/01",
+                "Policy":"bei Kulturveranstaltungen die Pflicht zum Mund-Nasen-Schutz nur mehr gelte, wenn man sich nicht an seinem Platz befände."
+            },
+
+            {
+                "Date":"2020/09/19",
+                "Policy":"Die „Sechste Bayerischen Infektionsschutzmaßnahmenverordnung“ wurde im Bereich Sport geändert."
+            },
+
+            {
+                "Date":"2020/10/17",
+                "Policy":"beschloss das bayerische Kabinett die Einführung eines „Ampelsystems“ auf Ebene der Landkreise."
+            },
+
+            
+        ],
+
+        "DE-HE":[
+            {
+                "Date":"2020/03/11",
+                "Policy":"aktivierte Hessen den Pandemieplan der 2007 verabschiedet und seither nicht mehr aktualisiert wurde."
+            },
+
+            {
+                "Date":"2020/04/10",
+                "Policy":"traten Einreisebeschränkungen in Hessen und damit auch am Flughafen Frankfurt in Kraft, wonach sich Einreisende in eine 14-tägige Quarantäne begeben müssen."
+            },
+
+            {
+                "Date":"2020/04/27",
+                "Policy":"bestand in ganz Hessen eine Maskenpflicht."
+            },
+
+            {
+                "Date":"2020/05/07",
+                "Policy":"kündigte die Landesregierung weitere Lockerungen an."
+            },
+
+            {
+                "Date":"2020/05/15",
+                "Policy":"durften viele Gastronomiebetriebe und das Hotelgewerbe wieder öffnen."
+            },
+
+            {
+                "Date":"2020/07/03",
+                "Policy":"wurden weitere Lockerungen bezüglich des Aufenthaltes im Freien, möglichen Versammlungen und dem Besuch in Krankenhäusern beschlossen."
+            },
+
+            {
+                "Date":"2020/08/04",
+                "Policy":"erließ Hessen infolge der gestiegenen Zahlen neue Regeln für den Sport und Aufenthalt im Freien, so herrscht ab sofort ein Grillverbot."
+            },
+
+            {
+                "Date":"2020/09/30",
+                "Policy":"wurde infolge ansteigender Zahlen entschieden, eine bundesweite Warnampel, ähnlich dem hessischen Modell einzuführen."
+            },
+
+            {
+                "Date":"2020/10/04",
+                "Policy":"gab es einen neuen Hygieneplan für die Schulen."
+            }
+
+
         ]
 
     } 
