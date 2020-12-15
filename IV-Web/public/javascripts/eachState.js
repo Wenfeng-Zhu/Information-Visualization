@@ -1,18 +1,19 @@
 // let promise = fetch('http://localhost:3000/data/total-cases-by-state');
 
 function getVirtulData(name) {
+    var shortname = mapTable[name.toString()];
     var calenderChart = echarts.init(document.getElementById('eachState'));
     var date = +echarts.number.parseDate(2020 + '-03-02');
     var end = +echarts.number.parseDate(2020 + '-12-01');
     var dayTime = 3600 * 24 * 1000;
     var data = [];
     fetch('http://localhost:3000/data/infections-by-state-daily').then(jsonResponse => {
-        jsonResponse.json().then(result=>{
+        jsonResponse.json().then(result => {
             let i = 0;
             for (var time = date; time < end; time += dayTime) {
                 data.push([
                     echarts.format.formatTime('yyyy-MM-dd', time),
-                    result.dailyState[i][name.toString()]
+                    result.dailyState[i][shortname.toString()]
                 ]);
                 i++;
             }
@@ -21,14 +22,18 @@ function getVirtulData(name) {
 
                 title: {
                     top: 30,
-                    text: 'Confirmed status in each state',
+                    text: 'Confirmed status in ' + name,
                     left: 'center',
                     textStyle: {
                         color: '#fff'
                     }
                 },
                 tooltip: {
-                    trigger: 'item'
+                    trigger: 'item',
+                    formatter(params) {
+                        return params.name + params.value;
+                    }
+
                 },
                 legend: {
                     top: '30',
@@ -62,7 +67,8 @@ function getVirtulData(name) {
                         borderColor: '#111'
                     },
                     width: '70%',
-                    height: '35%'
+                    height: '35%',
+                    orient: 'horizontal'
                 }, {
                     top: '60%',
                     left: 'center',
@@ -87,7 +93,8 @@ function getVirtulData(name) {
                         borderColor: '#111'
                     },
                     width: '80%',
-                    height: '35%'
+                    height: '35%',
+                    orient: 'horizontal'
                 }],
                 series: [
                     {

@@ -149,7 +149,7 @@ function clickPath(d) {
 
 
     //alert(mapTable[name.toString()]);
-     getVirtulData(mapTable[name.toString()]);
+     getVirtulData(name);
 }
 
 
