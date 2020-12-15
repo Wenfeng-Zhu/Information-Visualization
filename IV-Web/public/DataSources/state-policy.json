@@ -1,0 +1,153 @@
+[  
+    {
+        "DE":[
+            {
+                "Date":"2020/03/23",
+                "Policy":"Deutschland kündigte die Schließung öffentlicher Plätze an und verbietet Versammlungen von mehr als zwei Personen."
+            },
+
+            {
+                "Date":"2020/04/20",
+                "Policy":"Einige Geschäfte in Deutschland wurden eröffnet."
+            },
+
+            {
+                "Date":"2020/04/27",
+                "Policy":"Maskenpflicht. Nur mit Mask kann mann Geschäfte betreten und Verkehrsmittel nutzen."
+            },
+
+            {
+                "Date":"2020/05/16",
+                "Policy":"In mehreren deutschen Städten kam es zu Demonstrationen gegen die neuen Beschränkungen zur Verhütung der Coronavirus-Epidemie."
+            },
+
+            {
+                "Date":"2020/06/15",
+                "Policy":"Deutschland öffnet seine Grenzen zu den Nachbarländern."
+            },
+
+            {
+                "Date":"2020/11/02",
+                "Policy":"Zweite Blockade. Eine vierwöchige Blockade."
+            }
+
+        ],
+
+        "DE-BE":[
+            {
+                "Date":"2020/03/21",
+                "Policy":"Schließung von Gaststätten, Verbot touristischer Übernachtungen, Verbot von Versammlungen von mehr als zehn Personen sowie das Gebot, bei Kontakten mit Menschen einen Mindestabstand von 1,5 Metern einzuhalten."
+            },
+
+            {
+                "Date":"2020/04/09",
+                "Policy":"Neu Besuchsregelungen und Quarantäneregelungen."
+            },
+
+            {
+                "Date":"2020/04/16",
+                "Policy":"Verlängert die Geltungsdauer der SARS-CoV-2-Eindämmungsmaßnahmenverordnung."
+            },
+
+            {
+                "Date":"2020/06/23",
+                "Policy":" Ersetzt SARS-CoV-2-Eindämmungsmaßnahmenverordnung und Großveranstaltungsverbotsverordnung."
+            },
+
+            {
+                "Date":"2020/10/24",
+                "Policy":"Sperrstunde für Gaststätten und 5-Personen-Grenze im öffentlichen Raum im Freien von 23 Uhr bis 6 Uhr. Maskenpflicht auf Märkten ab."
+            },
+
+            {
+                "Date":"2020/10/27",
+                "Policy":"Maskenpflicht an einer Liste von weiteren Ort, Ausnahme für Personen auf Fahrzeugen außerhalb von Fußwegen."
+            },
+
+            {
+                "Date":"2020/11/26",
+                "Policy":"Maskenpflicht auch auf Gehsteigen vor Geschäften."
+            }
+        ],
+
+        "DE-NI":[
+            {
+                "Date":"2020/03/16",
+                "Policy":"schloss Niedersachsen Schulen, Hochschulen Kindertagesstät."
+            },
+
+            {
+                "Date":"2020/03/23",
+                "Policy":"setzte Niedersachsen das Kontaktverbot in einer Allgemeinverfügung um."
+            },
+
+            {
+                "Date":"2020/04/02",
+                "Policy":"erließ das Niedersächsische Sozialministerium die Niedersächsische Verordnung über die Beschränkung sozialer Kontakte."
+            },
+
+            {
+                "Date":"2020/04/20",
+                "Policy":"durften Einzelhandelsgeschäfte den Geschäftsbetrieb wieder aufnehmen, deren Verkaufsfläche nicht mehr als 800 m² betrug und die in der Lage waren, die Einhaltung der hygienischen Auflagen der Behörden, insbesondere des Abstandsgebots, zu garantieren."
+            },
+
+            {
+                "Date":"2020/05/11",
+                "Policy":"traten weitere Lockerungen in Kraft, unter anderem konnten Museen und andere Kultureinrichtungen sowie zoologische Gärten wieder öffnen."
+            }
+
+        ],
+        "DE-HB":[
+            {
+                "Date":"2020/03/16",
+                "Policy":"Schulschließung."
+            },
+
+            {
+                "Date":"2020/03/17",
+                "Policy":"Das Land Bremen untersagteden Betrieb von Freizeit-, Vergnügungs-, Sport- und Tourismusstätten sowie von Einzelhandelsgeschäften, die keine Waren des täglichen Bedarfs vertreiben."
+            },
+
+            {
+                "Date":"2020/04/27",
+                "Policy":"Maskenpflicht einführen."
+            },
+
+            {
+                "Date":"2020/08/25",
+                "Policy":"erließ die Bremische Bürgerschaft eine neue Verordnung zu Corona und dem weiteren Vorgehen."
+            }
+        ],
+
+        "DE-BB":[
+            {
+                "Date":"2020/03/12",
+                "Policy":" Rückkehrern aus bestimmten Risikogebieten, das Betreten von öffentlichen Einrichtungen untersagte."
+            },
+
+            {
+                "Date":"2020/03/18",
+                "Policy":"verfügte Brandenburg eine landesweite Schulschließung."
+            },
+
+            {
+                "Date":"2020/03/23",
+                "Policy":"bundeseinheitlichen Kontaktverbot."
+            },
+
+            {
+                "Date":"2020/04/19",
+                "Policy":"zusätzlich die SARS-CoV-2-Quarantäneverordnung erlassen."
+            },
+
+            {
+                "Date":"2020/04/27",
+                "Policy":"Maskenpflicht."
+            }
+        ],
+
+    } 
+
+
+
+]
