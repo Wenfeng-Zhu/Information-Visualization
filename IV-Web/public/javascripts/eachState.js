@@ -1,6 +1,6 @@
 // let promise = fetch('http://localhost:3000/data/total-cases-by-state');
 
-function getVirtulData(name) {
+function loadCalendar(name) {
     var shortname = mapTable[name.toString()];
     var calenderChart = echarts.init(document.getElementById('eachState'));
     var date = +echarts.number.parseDate(2020 + '-03-02');

@@ -23,6 +23,8 @@ var g = svg.append("g")
 
 let url = "https://raw.githubusercontent.com/isellsoap/deutschlandGeoJSON/master/2_bundeslaender/4_niedrig.geo.json"
 d3.json(url, function (collection) {
+    loadHistogram('sum');
+    loadCalendar('Bayern');
     var bounds = d3.geoBounds(collection),
         bottomLeft = bounds[0],
         topRight = bounds[1],
@@ -99,18 +101,12 @@ d3.json(url, function (collection) {
     */
 });
 
-function map() {
-
-}
-
 
 function clickPath(d) {
     var x = width / 2,
         y = height / 2,
         k = 1,
         name = d.properties.name;
-
-
 
     g.selectAll("text")
         .remove();
@@ -121,7 +117,7 @@ function clickPath(d) {
             y = +centroid[1],
             k = 1.75;
         focused = d;
-
+        //alert("test-1")
         g.append("text")
             .text(name)
             .attr("x", x)
@@ -132,10 +128,12 @@ function clickPath(d) {
             .style("fill", "rgb(255, 200, 255)")
             .style("font-family", "Times New Roman")
             .on("click", clickText);
+        loadHistogram(name);
+        loadCalendar(name);
     } else {
         focused = null;
+        loadHistogram('sum');
     }
-    ;
 
     g.selectAll("path")
         .classed("active", focused && function (d) {
@@ -146,10 +144,8 @@ function clickPath(d) {
         .duration(500)
         .attr("transform", "translate(" + (width / 2) + "," + (height / 2) + ")scale(" + k + ")translate(" + (-x) + "," + (-y) + ")")
         .style("stroke-width", 1.75 / k + "px");
-
-
     //alert(mapTable[name.toString()]);
-     getVirtulData(name);
+
 }
 
 
