@@ -3,23 +3,53 @@
     "name": "Brands",
     "colorByPoint": true,
     "data": [{
-        "name": "Chrome",
-        "y": 61.41
+        "name": "Brandenburg",
+        "y": 20045
     }, {
-        "name": "Internet Explorer",
-        "y": 11.84
+        "name": "Berlin",
+        "y": 65856
     }, {
-        "name": "Firefox",
-        "y": 10.85
+        "name": "Baden-Württemberg",
+        "y": 151405
     }, {
-        "name": "Edge",
-        "y": 4.67
+        "name": "Bayern",
+        "y": 211365
     }, {
-        "name": "Safari",
-        "y": 4.18
+        "name": "Bremen",
+        "y": 10076
     }, {
-        "name": "Other",
-        "y": 7.05
+        "name": "Hessen",
+        "y": 88308
+    }, {
+        "name": "Hamburg",
+        "y": 25141
+    }, {
+        "name": "Mecklenburg-Vorpommern",
+        "y": 6001
+    }, {
+        "name": "Niedersachsen",
+        "y": 72247
+    }, {
+        "name": "Nordrhein-Westfalen",
+        "y": 264424
+    }, {
+        "name": "Rheinland-Pfalz",
+        "y": 44689
+    }, {
+        "name": "Schleswig-Holstein",
+        "y": 14387
+    }, {
+        "name": "Saarland",
+        "y": 12847
+    }, {
+        "name": "Sachsen",
+        "y": 58694
+    }, {
+        "name": "Sachsen-Anhalt",
+        "y": 12717
+    }, {
+        "name": "Thüringen",
+        "y": 17538
     }]
 }]
 }

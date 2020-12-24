@@ -6,7 +6,7 @@ var pieexample = {
 		type: 'pie'
 	},
 	title: {
-		text: '2018 年浏览器市场份额'
+		text: 'total infection in Germany'
 	},
 	tooltip: {
 		pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
@@ -61,7 +61,7 @@ fetch('http://localhost:3000/data/testdata')
             type: 'pie'
         },
         title: {
-            text: '2018 年浏览器市场份额'
+            text: 'total infection in Germany'
         },
         tooltip: {
             pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
