@@ -2,130 +2,146 @@
     {
         "State": "Baden-Württemberg",
         "caseNumbers": "159013",
-        "GRP in dollar": 55793,
-        "GRP in Euro": 47290,
-        "population_density_per sq. km": 308
+        "GRPindollar": 55793,
+        "GRPinEuro": 47290,
+        "population_density_per sq. km": 308,
+        "total": 151405
     },
 
     {
         "State": "Bayern",
         "caseNumbers": "222360",
-        "GRP in dollar": 57012,
-        "GRP in Euro": 48323,
-        "population_density_per sq. km": 184
+        "GRPindollar": 57012,
+        "GRPinEuro": 48323,
+        "population_density_per sq. km": 184,
+        "total": 211365
     },
 
     {
         "State": "Berlin",
         "caseNumbers": "68508",
-        "GRP in dollar" : 49513,
-        "GRP in Euro" : 41967,
-        "population_density_per sq. km": 4055
+        "GRPindollar" : 49513,
+        "GRPinEuro" : 41967,
+        "population_density_per sq. km": 4055,
+        "total": 65856
     },
 
     {
         "State": "Brandenburg",
         "caseNumbers": "21123",
-        "GRP in dollar": 34853,
-        "GRP in Euro": 29541,
-        "population_density_per sq. km": 84
+        "GRPindollar": 34853,
+        "GRPinEuro": 29541,
+        "population_density_per sq. km": 84,
+        "total":20045
     },
 
     {
         "State": "Bremen",
         "caseNumbers": "10499",
-        "GRP in dollar" : 58064,
-        "GRP in Euro" : 49215,
-        "population_density_per sq. km": 1624
+        "GRPindollar" : 58064,
+        "GRPinEuro" : 49215,
+        "population_density_per sq. km": 1624,
+        "total": 10076
     },
 
     
     {
         "State": "Hamburg",
         "caseNumbers": "25775",
-        "GRP in dollar" : 78904,
-        "GRP in Euro" : 66879,
-        "population_density_per sq. km": 2424
+        "GRPindollar" : 78904,
+        "GRPinEuro" : 66879,
+        "population_density_per sq. km": 2424,
+        "total": 25141
     },
     
     {
         "State": "Hessen",
         "caseNumbers": "92825",
-        "GRP in dollar": 55360,
-        "GRP in Euro": 46923,
-        "population_density_per sq. km": 296
+        "GRPindollar": 55360,
+        "GRPinEuro": 46923,
+        "population_density_per sq. km": 296,
+        "total": 88308
     },
 
     {
         "State": "Mecklenburg-Vorpommern",
         "caseNumbers": "6446",
-        "GRP in dollar": 34143,
-        "GRP in Euro": 28940,
-        "population_density_per sq. km": 69
+        "GRPindollar": 34143,
+        "GRPinEuro": 28940,
+        "population_density_per sq. km": 69,
+        "total": 6001
     },
 
     {
         "State": "Niedersachsen",
         "caseNumbers": "170904",
-        "GRP in dollar": 45332,
-        "GRP in Euro": 38423,
-        "population_density_per sq. km": 167
+        "GRPindollar": 45332,
+        "GRPinEuro": 38423,
+        "population_density_per sq. km": 167,
+        "total": 71784
     },
 
     {
         "State": "Nordrhein-Westfalen",
         "caseNumbers": "276697",
-        "GRP in dollar": 46812,
-        "GRP in Euro": 39678,
-        "population_density_per sq. km": 525
+        "GRPindollar": 46812,
+        "GRPinEuro": 39678,
+        "population_density_per sq. km": 525,
+        "total": 260059
     },
 
  
     {
         "State": "Rheinland-Pfalz",
         "caseNumbers": "47140",
-        "GRP in dollar": 41832,
-        "GRP in Euro": 35457,
-        "population_density_per sq. km": 205
+        "GRPindollar": 41832,
+        "GRPinEuro": 35457,
+        "population_density_per sq. km": 205,
+        "total": 43701
     },
 
     {
         "State": "Saarland",
         "caseNumbers": "13212",
-        "GRP in dollar": 43280,
-        "GRP in Euro": 36684,
-        "population_density_per sq. km": 387
+        "GRPindollar": 43280,
+        "GRPinEuro": 36684,
+        "population_density_per sq. km": 387,
+        "total": 12914
     },
 
     {
         "State": "Sachsen",
         "caseNumbers": "63535",
-        "GRP in dollar": 37108,
-        "GRP in Euro": 31453,
-        "population_density_per sq. km": 221
+        "GRPindollar": 37108,
+        "GRPinEuro": 31453,
+        "population_density_per sq. km": 221,
+        "total": 58694
     },
 
     {
         "State": "Saxony-Anhalt",
         "caseNumbers": "13826",
-        "GRP in dollar": 33978,
-        "GRP in Euro": 28800,
-        "population_density_per sq. km": 109
+        "GRPindollar": 33978,
+        "GRPinEuro": 28800,
+        "population_density_per sq. km": 109,
+        "total": 12717
     },
 
     {
         "State": "Schleswig-Holstein",
         "caseNumbers": "15082",
-        "GRP in dollar": 39773,
-        "GRP in Euro": 33712,
-        "population_density_per sq. km": 183
+        "GRPindollar": 39773,
+        "GRPinEuro": 33712,
+        "population_density_per sq. km": 183,
+        "total": 14387
     },
 
     {
         "State": "Thüringen",
         "caseNumbers": "19463",
-        "GRP in dollar": 35256,
-        "GRP in Euro": 29883,
-        "population_density_per sq. km": 133
+        "GRPindollar": 35256,
+        "GRPinEuro": 29883,
+        "population_density_per sq. km": 133,
+        "total": 17538
     }
 ]
