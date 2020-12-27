@@ -1,10 +1,7 @@
 缺失数据：各个州的现存感染病例（active），各个州的每日治愈病例
 已有数据：
 deaths-by-state-daily 各个州的每日死亡病例
-低级json链接：https://s5.aconvert.com/convert/p3r68-cdx67/mdv6u-pcad1.json
 
 infections-by-state-daily 各个州的每日感染/新增病例
-低级json链接：https://s5.aconvert.com/convert/p3r68-cdx67/g92vl-tssc0.json
 
 total-cases-by-state 各个州的累计感染病例
-低级json链接：https://s5.aconvert.com/convert/p3r68-cdx67/2u9j3-ea1tz.json
