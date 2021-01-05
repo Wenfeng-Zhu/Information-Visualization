@@ -21,7 +21,7 @@ function loadCalendar(name) {
                 backgroundColor: '#404a59',
 
                 title: {
-                    top: 30,
+                    top: 10,
                     text: 'Confirmed status in ' + name,
                     left: 'center',
                     textStyle: {
@@ -36,8 +36,8 @@ function loadCalendar(name) {
 
                 },
                 legend: {
-                    top: '30',
-                    left: '100',
+                    top: '35',
+                    left: '50',
                     data: ['confirm', 'Top 12'],
                     textStyle: {
                         color: '#fff'

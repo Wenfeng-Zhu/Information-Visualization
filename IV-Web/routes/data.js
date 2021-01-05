@@ -22,10 +22,10 @@ router.get('/deaths-by-state', function (req, res, N) {
 
 router.get('/testdata', function(req, res){
     res.send(series);
-  });
+});
 
-  router.get('/gdp', function(req, res){
+router.get('/gdp', function(req, res){
     res.send(gdp);
-  });
+});
   
 module.exports = router;

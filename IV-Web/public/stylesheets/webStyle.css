@@ -1,7 +1,12 @@
-#container{
+#container1{
     display: grid;
     grid-template-columns: 50% 50% ;
     grid-template-rows: 50% 50%;
+}
+#container2{
+  display: grid;
+  grid-template-columns: 100% ;
+  grid-template-rows: 100%;
 }
 .item {
     font-size: 4em;
@@ -20,4 +25,29 @@
 }
 
 .item-3 {
+}
+
+.nav {
+  overflow: hidden;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+.nav li {
+  float: left;
+  padding: 5px;
+  width: 150px;
+  color: #666;
+  list-style: none;
+  border-left: 1px solid #f4f4f4;
+  cursor: pointer;
+}
+.nav li:hover,.selected {
+  background-color:#ecebeb;
+  border-left: 1px solid #ecebeb;
+}
+.content{
+  border: 1px solid #f4f4f4;
+  height: 1018px;
+  padding: 10px;
+  overflow: hidden;
 }
