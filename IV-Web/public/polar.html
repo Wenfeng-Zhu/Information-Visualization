@@ -82,10 +82,21 @@
             const chartColor = 'rgba(7, 92, 214, .7)'
             const fontColor = '#606060'
             const gridLineColor = 'rgb(210, 214, 218)'
-
-            const radiusScale = d3.scaleLinear()
-                .domain([0, d3.max(data, d => parseFloat(d.SevenDaysIncidence[month]))])
+            var radiusScale ;
+            if (month == "May" || month == "June" || month == "July" || month == "August" || month == "September") {
+                radiusScale = d3.scaleLinear()
+                .domain([0,19])
                 .range([0, outerRadius - 10])
+            }
+            else if (month == "October" || month == "November" || month == "December") {
+                radiusScale = d3.scaleLinear()
+                .domain([0,380])
+                .range([0, outerRadius - 10])
+            }
+
+            /*const radiusScale = d3.scaleLinear()
+                .domain([0, d3.max(data, d => parseFloat(d.SevenDaysIncidence[month]))])
+                .range([0, outerRadius - 10])*/
             // 通过arc函数生成原型或圆环
             const arc = d3.arc()
                 .innerRadius(innerRadius)
@@ -179,9 +190,14 @@
                     .attr('dominant-baseline', 'end')
                     .style('font-size', 12)
                     .style('font-weight', 300)
-                const maxIncidence = d3.max(data, d => parseFloat(d.SevenDaysIncidence[month])) * outerRadius / ( outerRadius - 10 )
-                const max = d3.max(data, d => d.SevenDaysIncidence[month])
-                console.log(max);
+
+                var maxIncidence;
+                if (month == "May" || month == "June" || month == "July" || month == "August" || month == "September") {
+                    maxIncidence = 19 * outerRadius / ( outerRadius - 10 )
+                }
+                else if (month == "October" || month == "November" || month == "December") {
+                    maxIncidence = 380 * outerRadius / ( outerRadius - 10 )
+                }
                 for (let i = 1; i <= 6; i++) {
                     var n = maxIncidence / 6 * i
                     n = n.toFixed(1);
