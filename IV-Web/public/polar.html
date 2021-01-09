@@ -21,7 +21,7 @@
             left: 0;
             top: 0;
             box-shadow: 0 0 10px 0 #000000;
-            width: 200px;
+            width: 250px;
             height: 100px;
             border-radius: 4px;
             box-sizing: border-box;
@@ -36,17 +36,36 @@
     </style>
 </head>
 <body>
+    <div>
+        <select onchange="init()" id = "month">
+            <option selected ="selected" value ="May">May</option>
+            <option value ="June">June</option>
+            <option value="July">July</option>
+            <option value="August">August</option>
+            <option value ="September">September</option>
+            <option value ="October">October</option>
+            <option value="November">November</option>
+            <option value="December">December</option>
+          </select>
+    </div>
     <div id="radial-bar-chart"></div>
+   
 
     <script src="https://d3js.org/d3.v5.min.js"></script>
-    <script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>       
+        init();
 
+        function init() {
+            d3.select("svg").remove();
 
-        fetch('http://localhost:3000/data/gdp')
+            fetch('http://localhost:3000/data/gdp')
             .then(function(response) {
                 return response.json();
             })
             .then(function(myJson) {
+            var month = $("#month option:selected").val();
+            console.log(month);
             var state = [];
 
             var length = 0;
@@ -63,8 +82,9 @@
             const chartColor = 'rgba(7, 92, 214, .7)'
             const fontColor = '#606060'
             const gridLineColor = 'rgb(210, 214, 218)'
-            const radiusScale = d3.scaleLinear()
-                .domain([0, d3.max(data, d => d.total)])
+
+            const radiusScale = d3.scaleLinear()
+                .domain([0, d3.max(data, d => parseFloat(d.SevenDaysIncidence[month]))])
                 .range([0, outerRadius - 10])
             // 通过arc函数生成原型或圆环
             const arc = d3.arc()
@@ -84,7 +104,6 @@
             /*svg.append('g')
                 .attr('class', 'x-axis')
                 .call(xAxis)
-             
             */
 
             function drawChart() {
@@ -104,9 +123,9 @@
                             <span>GRP:</span>
                             <span class="value"></span>
                         </div>
-                        <div class="totalDeath">
-                            <span>TotalDeath:</span>
-                            <span class="infection"></span>
+                        <div class="SevenDaysIncidence">
+                            <span>7-Days-Incidence:</span>
+                            <span class="incidence"></span>
                         </div>
                     `
                 )
@@ -124,7 +143,7 @@
                     .attr('fill', chartColor)
                     .attr('d', function (d) {
                         // 动态设定外半径
-                        arc.outerRadius(radiusScale(d.data.total))
+                        arc.outerRadius(radiusScale(parseFloat(d.data.SevenDaysIncidence[month])))
                         // 注册path data
                         return arc(d)
                     })
@@ -138,7 +157,7 @@
                         toolTip.style('top', d3.event.pageY)
                         toolTip.select('.state .value').text(d.data.state)
                         toolTip.select('.grp .value').text(d.data.GRP + '€')
-                        toolTip.select('.totalDeath .infection').text(d.data.total)
+                        toolTip.select('.SevenDaysIncidence .incidence').text(d.data.SevenDaysIncidence[month])
                     })
                     .on('mouseout', function (d, i) {
                         d3.select(this).transition()
@@ -147,46 +166,6 @@
                         toolTip.style('opacity', 0)
                     })
                 }
-
-            function xAxis(g) {
-                // 计算x轴标签位置
-                const xLabel = d3.scaleBand()
-                    .domain(data.map(d => d.state))
-                    .range([0, 2 * Math.PI])
-                g.attr('class', 'x-axis')
-                .attr('text-anchor', 'start')
-                .attr('dominant-baseline', 'middle')
-                .attr('stroke', fontColor)
-                .attr('stroke-width', 1)
-                .style('font-size', 14)
-                .style('font-weight', 100)
-                .call(g => {
-                    g.selectAll('g')
-                        .data(data)
-                        .enter()
-                        .append('g')
-                        .attr('transform', d => {
-                            const rotateAngle = tsRadian2angle(xLabel(d.state) + xLabel.bandwidth() / 2) - 90
-                            return `
-                                rotate(${ (rotateAngle) })
-                                translate(${ outerRadius + 5}, 0)
-                            `
-                        })
-                        .call(g => {
-                            g.append('line')
-                                .attr('x2', -5)
-                            g.append('text')
-                                .text(d => d.state)
-                                .attr('transform', function (d, i) {
-                                    // 通过getBBox访问到text元素的长度
-                                    const val = tsRadian2angle(xLabel(d.state) + xLabel.bandwidth() / 2) > 180
-                                        ? `rotate(180) translate(${ -this.getBBox().width - 10 }, 0)`
-                                        : 'translate(10, 0)'
-                                    return val
-                                })
-                        })
-                })
-            }
             
             // 绘制背景网格
             function drawGrid() {
@@ -197,16 +176,20 @@
                     .attr('stroke-width', 1)
                     .attr('stroke-dasharray', '5,5')
                     .attr('text-anchor', 'end')
-                    .attr('dominant-baseline', 'middle')
+                    .attr('dominant-baseline', 'end')
                     .style('font-size', 12)
-                    .style('font-weight', 100)
-                const maxTotal = d3.max(data, d => d.total) * outerRadius / ( outerRadius - 10 )
+                    .style('font-weight', 300)
+                const maxIncidence = d3.max(data, d => parseFloat(d.SevenDaysIncidence[month])) * outerRadius / ( outerRadius - 10 )
+                const max = d3.max(data, d => d.SevenDaysIncidence[month])
+                console.log(max);
                 for (let i = 1; i <= 6; i++) {
-                    const n = maxTotal / 6 * i >>> 0
+                    var n = maxIncidence / 6 * i
+                    n = n.toFixed(1);
                     gridWrapper.append('circle')
                         .attr('r', outerRadius / 6 * i)
                     gridWrapper.append('text')
                         .text(n)
+                        .style("color", "red")
                         .attr('transform', `translate(0, ${ -outerRadius / 6 * i })`)
                 }
                 const bandWidth = 2 * Math.PI / data.length
@@ -218,6 +201,7 @@
                         .attr('y2',  y)
                 }
             }
+
             
             // 转换弧度值为角度
             function tsRadian2angle(radian) {
@@ -231,15 +215,16 @@
                     data.push({
                     state: myJson[i].State,
                     GRP: myJson[i].GRPinEuro,
-                    total:myJson[i].total
-                })
+                    SevenDaysIncidence: myJson[i].SevenDaysIncidence
+                    })
                 }
-                console.log(data);
+
                 data.sort((a, b) => b.GRP - a.GRP)
                 return data
             }
         });
-        // TODO: 内半径颜色
+        }
+        
     </script>
 </body>
 </html>
