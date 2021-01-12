@@ -11,3 +11,5 @@ TODO:
 - Lack of state epidemic prevention policy data
 - Implementation of the database
 - Cross-domain data interaction based on cloud server
+
+test
