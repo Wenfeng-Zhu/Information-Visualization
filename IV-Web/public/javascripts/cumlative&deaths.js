@@ -1,6 +1,3 @@
-
-
-
 function loadHistogram(name) {
     var xAxisData = [];
     var data_cumlative = [];
