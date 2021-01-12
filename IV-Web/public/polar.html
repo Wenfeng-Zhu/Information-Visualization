@@ -231,6 +231,9 @@
                     })
             }
             
+            svg.call(d3.zoom().scaleExtent([0.5, 4]).on("zoom", function () {
+                svg.attr("transform", 'translate(400, 400) scale('+d3.event.transform.k+','+d3.event.transform.k+')')
+            }))
             
             // 绘制背景网格
             function drawGrid() {
@@ -244,9 +247,7 @@
                     .attr('dominant-baseline', 'end')
                     .style('font-size', 12)
                     .style('font-weight', 300)
-                    .call(d3.zoom().scaleExtent([0.5, 4]).on("zoom", function () {
-                        svg.attr("transform", 'translate(400, 400) scale('+d3.event.transform.k+','+d3.event.transform.k+')')
-                    }))
+                    
                    
 
                 var maxIncidence;
