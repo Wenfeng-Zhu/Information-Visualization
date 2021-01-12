@@ -4,7 +4,7 @@
         "caseNumbers": "21123",
         "GRPindollar": 34853,
         "GRPinEuro": 29541,
-        "population_density_per sq. km": 84,
+        "populationDensityPerSqKm": 84,
         "SevenDaysIncidence": {
             "May":"2.4",
             "June":"1.4",
@@ -23,7 +23,7 @@
         "caseNumbers": "68508",
         "GRPindollar" : 49513,
         "GRPinEuro" : 41967,
-        "population_density_per sq. km": 4055,
+        "populationDensityPerSqKm": 4055,
         "SevenDaysIncidence": {
             "May":"5.0",
             "June":"7.9",
@@ -41,7 +41,7 @@
         "caseNumbers": "159013",
         "GRPindollar": 55793,
         "GRPinEuro": 47290,
-        "population_density_per sq. km": 308,
+        "populationDensityPerSqKm": 308,
         "SevenDaysIncidence": {
             "May":"4.8",
             "June":"1.5",
@@ -59,7 +59,7 @@
         "caseNumbers": "222360",
         "GRPindollar": 57012,
         "GRPinEuro": 48323,
-        "population_density_per sq. km": 184,
+        "populationDensityPerSqKm": 184,
         "SevenDaysIncidence": {
             "May":"7.1",
             "June":"2.3",
@@ -77,7 +77,7 @@
         "caseNumbers": "10499",
         "GRPindollar" : 58064,
         "GRPinEuro" : 49215,
-        "population_density_per sq. km": 1624,
+        "populationDensityPerSqKm": 1624,
         "SevenDaysIncidence": {
             "May":"17.3",
             "June":"10.1",
@@ -95,7 +95,7 @@
         "caseNumbers": "92825",
         "GRPindollar": 55360,
         "GRPinEuro": 46923,
-        "population_density_per sq. km": 296,
+        "populationDensityPerSqKm": 296,
         "SevenDaysIncidence": {
             "May":"5.9",
             "June":"2.8",
@@ -113,7 +113,7 @@
         "caseNumbers": "25775",
         "GRPindollar" : 78904,
         "GRPinEuro" : 66879,
-        "population_density_per sq. km": 2424,
+        "populationDensityPerSqKm": 2424,
         "SevenDaysIncidence": {
             "May":"2.6",
             "June":"1.2",
@@ -131,7 +131,7 @@
         "caseNumbers": "6446",
         "GRPindollar": 34143,
         "GRPinEuro": 28940,
-        "population_density_per sq. km": 69,
+        "populationDensityPerSqKm": 69,
         "SevenDaysIncidence": {
             "May":"1.0",
             "June":"0.5",
@@ -149,7 +149,7 @@
         "caseNumbers": "170904",
         "GRPindollar": 45332,
         "GRPinEuro": 38423,
-        "population_density_per sq. km": 167,
+        "populationDensityPerSqKm": 167,
         "SevenDaysIncidence": {
             "May":"4.1",
             "June":"4.1",
@@ -167,7 +167,7 @@
         "caseNumbers": "276697",
         "GRPindollar": 46812,
         "GRPinEuro": 39678,
-        "population_density_per sq. km": 525,
+        "populationDensityPerSqKm": 525,
         "total": 260059,
         "SevenDaysIncidence": {
             "May":"6.3",
@@ -186,7 +186,7 @@
         "caseNumbers": "47140",
         "GRPindollar": 41832,
         "GRPinEuro": 35457,
-        "population_density_per sq. km": 205,
+        "populationDensityPerSqKm": 205,
         "SevenDaysIncidence": {
             "May":"3.3",
             "June":"1.6",
@@ -204,7 +204,7 @@
         "caseNumbers": "15082",
         "GRPindollar": 39773,
         "GRPinEuro": 33712,
-        "population_density_per sq. km": 183,
+        "populationDensityPerSqKm": 183,
         "SevenDaysIncidence": {
             "May":"3.0",
             "June":"0.5",
@@ -222,7 +222,7 @@
         "caseNumbers": "13212",
         "GRPindollar": 43280,
         "GRPinEuro": 36684,
-        "population_density_per sq. km": 387,
+        "populationDensityPerSqKm": 387,
         "SevenDaysIncidence": {
             "May":"3.6",
             "June":"1.6",
@@ -240,7 +240,7 @@
         "caseNumbers": "63535",
         "GRPindollar": 37108,
         "GRPinEuro": 31453,
-        "population_density_per sq. km": 221,
+        "populationDensityPerSqKm": 221,
         "SevenDaysIncidence": {
             "May":"3.2",
             "June":"0.8",
@@ -258,7 +258,7 @@
         "caseNumbers": "13826",
         "GRPindollar": 33978,
         "GRPinEuro": 28800,
-        "population_density_per sq. km": 109,
+        "populationDensityPerSqKm": 109,
         "SevenDaysIncidence": {
             "May":"1.4",
             "June":"1.6",
@@ -276,7 +276,7 @@
         "caseNumbers": "19463",
         "GRPindollar": 35256,
         "GRPinEuro": 29883,
-        "population_density_per sq. km": 133,
+        "populationDensityPerSqKm": 133,
         "SevenDaysIncidence": {
             "May":"6.9",
             "June":"2.8",
