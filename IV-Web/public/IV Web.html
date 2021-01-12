@@ -32,14 +32,8 @@
         <script src="javascripts/eachState.js"></script>
         <script src="javascripts/test.js"></script>
     </div>
-    <!--
-    <div class="list" id="container2">
-        <iframe src="pietest.html" height="800" width="100%" frameborder="no" marginwidth="0" marginheight="0" scrolling="no">       
-        </iframe>
-    </div>
-    -->
-   
-    <div class="list" id="container2">
+
+    <div class="list" id="container2" style="display: none;">
         <iframe src="polar.html" height="800" width="100%" frameborder="no" marginwidth="0" marginheight="0" scrolling="no">       
         </iframe>
     </div>
@@ -90,15 +84,7 @@
                 $(divShow[index]).siblings('.list').hide();
             }
         });
-    });
-    var div = document.getElementById('container');
-    console.log(div.offsetHeight); //1018
-    console.log(div.offsetWidth); //1395
-
-    console.log(div.clientHeight); //1018
-    console.log(div.clientWidth); //1395
-
-    
+    });    
 </script>
 </body>
 
