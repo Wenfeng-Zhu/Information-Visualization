@@ -12,7 +12,7 @@ It is a group project of Ludwig-Maximilians-Universität München(LMU) informati
 - Shuaicong Wu (Master Computer Science)
 # Install
 This project uses [node](https://nodejs.org/en/) and [npm](https://www.npmjs.com/). Go check them out if you don't have them locally installed.  
-You will need to You need to go into this folder  
+You will need to go into this folder  
 `$ cd IV-Web`  
  
  Then you will need to install the necessary packages.  
