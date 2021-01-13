@@ -1,23 +1,28 @@
-#Information-Visualization
+# Information-Visualization
 LMU-WS20/21-IV-Group 28-COVID Visualization
 ***
-#Introduction
+# Introduction
 This is an information visualization project on the status of COVID-19 in the various German states.  
 It is a group project of Ludwig-Maximilians-Universität München(LMU) information visualization course.  
-###Team members
+### Team members
 - Wenfeng Zhu (Master Human-Computer Interaction)
 - Shaohua Tong (Master Computer Science)
 - Yukun Chen (Master Computer Science)
 - Chenke Xie (Master Computer Science)
 - Shuaicong Wu (Master Computer Science)
-#Install
+# Install
 This project uses [node](https://nodejs.org/en/) and [npm](https://www.npmjs.com/). Go check them out if you don't have them locally installed.  
-    $ npm install --global
+    `$ npm install --global`  
 You will need to manually start Express' local server.  
-    $ npm start
-Then open the 'http://localhost:3000/' to run the web-page.
+    `$ npm start`  
+Then open the http://localhost:3000/ to run the web-page.
 
-#Version Log
+# Version Log
+
+
+
+
+
 
 DONE:
 - Map with click and zoom function.
