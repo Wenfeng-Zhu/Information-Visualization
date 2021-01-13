@@ -17,6 +17,8 @@ You will need to manually start Express' local server.
     $ npm start
 Then open the 'http://localhost:3000/' to run the web-page.
 
+#Version Log
+
 DONE:
 - Map with click and zoom function.
 - A continuous histogram showing the epidemic situation in Germany (existing confirmed and cumulative confirmed).
