@@ -1,33 +1,32 @@
-.background {
-    fill: none;
-    /*fill: rgb(239, 237, 245);*/
-    stroke: black;
-    stroke-width: 3.5px;
-    pointer-events: all;
-}
+/*.background {*/
+/*    fill: none;*/
+/*    !*fill: rgb(239, 237, 245);*!*/
+/*    stroke: black;*/
+/*    stroke-width: 3.5px;*/
+/*    pointer-events: all;*/
+/*}*/
 
-.home{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-}
+/*.home{*/
+/*    display: flex;*/
+/*    width: 100%;*/
+/*}*/
 
 .displayWindow{
+    position: absolute;
+    top: 80px;
     width: 80%;
     height: 100%;
-    border:3px solid #000
+    z-index: 1;
+    /*border:3px solid #000;*/
 }
 
 .allStates {
+    width: 60%;
     fill: rgb(188, 189, 220);
     stroke: #fff;
     stroke-width: 1.25px;
     opacity: 0.85;
-    align-items: center;
 
-}
-.feature{
-    left: 20%;
 }
 
 .allStates .active {

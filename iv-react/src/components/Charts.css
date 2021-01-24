@@ -1,0 +1,29 @@
+.chartsArea{
+    width: 100%;
+    display: grid;
+    /*border:3px solid #000;*/
+    justify-content: end;
+    justify-items: end;
+}
+
+#histogram{
+    z-index: 999;
+    right: 20px;
+    top:50px;
+    width: 750px;
+    height: 300px;
+    background-color:#F2F2F2;
+    box-shadow:2px 3px 3px #c8c8c8 ;
+
+}
+#heatMap{
+    z-index: 999;
+    width: 750px;
+    height: 400px;
+    right: 20px;
+    top:70px;
+    justify-content: end;
+    align-self: center;
+    background-color:#F2F2F2;
+    box-shadow:2px 3px 3px #c8c8c8 ;
+}

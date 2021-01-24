@@ -1,0 +1,18 @@
+export const StateName = {
+    "Baden-Württemberg": "DE-BW",
+    "Bayern": "DE-BY",
+    "Berlin": "DE-BE",
+    "Brandenburg": "DE-BB",
+    "Bremen": "DE-HB",
+    "Hamburg": "DE-HH",
+    "Hessen": "DE-HE",
+    "Mecklenburg-Vorpommern": "DE-MV",
+    "Niedersachsen": "DE-NI",
+    "Nordrhein-Westfalen": "DE-NW",
+    "Rheinland-Pfalz": "DE-RP",
+    "Saarland": "DE-SL",
+    "Sachsen-Anhalt": "DE-ST",
+    "Sachsen": "DE-SN",
+    "Schleswig-Holstein": "DE-SH",
+    "Thüringen": "DE-TH",
+}

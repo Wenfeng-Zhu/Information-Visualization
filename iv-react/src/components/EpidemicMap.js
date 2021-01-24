@@ -20,9 +20,6 @@ class EpidemicMap extends Component {
         let data = MapData;
         let width = GeoData.width;
         let height = GeoData.height;
-        let x = width / 2;
-        let y = height / 2;
-        let k = 1;
         const g = d3.select('.allStates');
 
         g.selectAll("text").remove();
@@ -60,8 +57,8 @@ class EpidemicMap extends Component {
         //     .attr("class", "graticuleLine")
         //     .attr("d", geoPath);
 
-        let beginColor = d3.rgb(255, 140, 0);
-        let endColor = d3.rgb(255, 0, 0);
+        let beginColor = d3.rgb(241, 224, 153);
+        let endColor = d3.rgb(242, 65, 65);
         let linear = d3.scaleLinear()
             .domain([5500, 280000])
             .range([0, 1]);
