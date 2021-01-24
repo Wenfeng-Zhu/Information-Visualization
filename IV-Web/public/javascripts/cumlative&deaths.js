@@ -1,10 +1,10 @@
 function loadHistogram(name) {
-    var xAxisData = [];
-    var data_cumlative = [];
-    var data_deaths = [];
+    const xAxisData = [];
+    const data_cumlative = [];
+    const data_deaths = [];
 
     if (name === 'sum') {
-        fetch('http://localhost:3000/data/total-cases-by-state').then(jsonResponse1 => {
+        fetch('http://localhost:9000/data/total-cases-by-state').then(jsonResponse1 => {
             jsonResponse1.json().then(result1 => {
                 const sum_length = parseInt(result1.sumOfState.length, 10);
                 for (var i = 0; i < sum_length; i++) {
@@ -13,7 +13,7 @@ function loadHistogram(name) {
                     // data_deaths.push((Math.cos(i / 5) * (i / 5 - 10) + i / 6) * 5);
                 }
 
-                fetch('http://localhost:3000/data/deaths-by-state').then(jsonResponse2 => {
+                fetch('http://localhost:9000/data/deaths-by-state').then(jsonResponse2 => {
                     jsonResponse2.json().then(result2 => {
                         const deaths_length = parseInt(result2.deathSum.length, 10);
                         for (var i = 0; i < deaths_length; i++) {
@@ -82,7 +82,7 @@ function loadHistogram(name) {
     }
     else {
         let shortname = mapTable[name].toString();
-        fetch('http://localhost:3000/data/total-cases-by-state').then(jsonResponse1 => {
+        fetch('http://localhost:9000/data/total-cases-by-state').then(jsonResponse1 => {
             jsonResponse1.json().then(result1 => {
                 const sum_length = parseInt(result1.sumOfState.length, 10);
                 for (var i = 0; i < sum_length; i++) {
@@ -91,7 +91,7 @@ function loadHistogram(name) {
                     // data_deaths.push((Math.cos(i / 5) * (i / 5 - 10) + i / 6) * 5);
                 }
 
-                fetch('http://localhost:3000/data/deaths-by-state').then(jsonResponse2 => {
+                fetch('http://localhost:9000/data/deaths-by-state').then(jsonResponse2 => {
                     jsonResponse2.json().then(result2 => {
                         const deaths_length = parseInt(result2.deathSum.length, 10);
                         for (var i = 0; i < deaths_length; i++) {
