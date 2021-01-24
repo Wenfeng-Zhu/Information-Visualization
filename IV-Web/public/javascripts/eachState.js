@@ -8,10 +8,10 @@ function loadCalendar(name) {
     const dayTime = 3600 * 24 * 1000;
     const data = [];
     const policy_date = [];
-    fetch('http://localhost:3000/data/infections-by-state-daily').then(jsonResponse => {
+    fetch('http://localhost:9000/data/infections-by-state-daily').then(jsonResponse => {
         jsonResponse.json().then(result_1 => {
 
-            fetch('http://localhost:3000/data/policy').then(jsonResponse => {
+            fetch('http://localhost:9000/data/policy').then(jsonResponse => {
                 jsonResponse.json().then(result_2 =>{
                     for (let element of result_2.policy[0][shortname.toString()]){
                         policy_date.push(echarts.format.formatTime('yyyy-MM-dd', element.Date));

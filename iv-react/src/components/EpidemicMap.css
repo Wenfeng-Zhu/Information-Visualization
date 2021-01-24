@@ -1,0 +1,41 @@
+.background {
+    fill: none;
+    /*fill: rgb(239, 237, 245);*/
+    stroke: black;
+    stroke-width: 3.5px;
+    pointer-events: all;
+}
+
+.home{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.displayWindow{
+    width: 80%;
+    height: 100%;
+    border:3px solid #000
+}
+
+.allStates {
+    fill: rgb(188, 189, 220);
+    stroke: #fff;
+    stroke-width: 1.25px;
+    opacity: 0.85;
+    align-items: center;
+
+}
+.feature{
+    left: 20%;
+}
+
+.allStates .active {
+    fill: rgba(0, 0, 0, 0.9);
+}
+
+.graticuleLine {
+    fill: none;
+    stroke: #777;
+    stroke-width: 0.5px;
+}

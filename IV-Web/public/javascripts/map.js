@@ -12,13 +12,8 @@ var svg = d3.select("#map")
     .attr("width", width)
     .attr("height", height);
 
-/*svg.append("rect")
-    .attr("class", "background")
-    .attr("width", width)
-    .attr("height", height);*/
 
 var g = svg.append("g")
-    .append("g")
     .attr("id", "states");
 
 let url = "https://raw.githubusercontent.com/isellsoap/deutschlandGeoJSON/master/2_bundeslaender/4_niedrig.geo.json"
@@ -55,10 +50,10 @@ d3.json(url, function (collection) {
     var graticule = d3.geoGraticule()
         .step([1, 1]);
 
-    /*g.append("path")
+    g.append("path")
         .datum(graticule)
         .attr("class", "graticuleLine")
-        .attr("d", geoPath);*/
+        .attr("d", geoPath);
 
     var beginColor = d3.rgb(255, 140, 0);
     var endColor = d3.rgb(255, 0, 0);
@@ -80,25 +75,10 @@ d3.json(url, function (collection) {
         .append("path")
         .attr("class", "feature")
         .attr("d", geoPath)
-        .attr('fill', function (d, i) {
+        .attr('fill', function (x, i) {
             return compute(linear(caseNumbers[i]));
         })
         .on("click", clickPath);
-
-    /*
-    console.log("d3.json: bounds = "+bounds);
-    console.log("d3.json: bottomLeft = "+bottomLeft);
-    console.log("d3.json: topRight = "+topRight);
-    console.log("d3.json: center = "+center);
-    console.log("d3.json: projection(center) = "+projection(center));
-    console.log("d3.json: projection(bottomLeft) = "+projection(bottomLeft));
-    console.log("d3.json: projection(topRight) = "+projection(topRight));
-    console.log("d3.json: topRightPx = "+topRightPx);
-    console.log("d3.json: bottomLeftPx = "+bottomLeftPx);
-    console.log("d3.json: scaleFactor x axis = "+width/(topRightPx[0]-bottomLeftPx[0]));
-    console.log("d3.json: scaleFactor y axis = "+height/(-topRightPx[1]+bottomLeftPx[1]));
-    console.log("d3.json: scaleFactor = "+scaleFactor);
-    */
 });
 
 
@@ -110,7 +90,6 @@ function clickPath(d) {
 
     g.selectAll("text")
         .remove();
-
     if ((focused === null) || !(focused === d)) {
         var centroid = geoPath.centroid(d),
             x = +centroid[0],
