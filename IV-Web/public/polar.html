@@ -73,7 +73,7 @@
         function init(type, month) {
             d3.select(type).select("svg").remove();
 
-            fetch('http://localhost:3000/data/gdp')
+            fetch('http://localhost:9000/data/gdp')
             .then(function(response) {
                 return response.json();
             })
@@ -186,7 +186,6 @@
             }
             
         
-
             function drawChart(type) {
                 // 饼图数据
                 var pieData
