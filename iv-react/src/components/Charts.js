@@ -1,7 +1,5 @@
-import React, {Component, useState} from "react";
+import React, {Component} from "react";
 import './Charts.css'
-import * as d3 from 'd3';
-import {MapData} from "./MapData";
 import * as echarts from 'echarts';
 import {InfectionsDaily} from "../Resource/InfectionsData";
 import {StateName} from '../Resource/StateName'
@@ -24,10 +22,12 @@ class Charts extends Component {
                     type: 'shadow'
                 },
                 formatter: function (params) {
-                    // let infection = params[1];
-                    // let sum = params[0];
-                    return params[0].name + '<br/>' + params[0].seriesName + ' : ' + params[0].value
-                        + '<br/>' + params[1].seriesName + ' : ' + params[1].value;
+                    let textArr = [];
+                    textArr.push(params[0].name);
+                    for (let i = 0; i < params.length; i++) {
+                        textArr.push(params[i].seriesName + ' : '+params[i].value);
+                    }
+                    return textArr.join('<br/>');
                 }
             },
             legend: {
@@ -122,22 +122,6 @@ class Charts extends Component {
         });
 
         let heatMap = echarts.init(document.getElementById('heatMap'));
-        let time = [];
-        time.push('week-1');
-        let allWeek = [];
-        let weekNum = 0;
-        let start = 0;
-        for (let name in StateName) {
-            for (let i = 1; i < InfectionsDaily.length; i++) {
-                weekNum += Number(InfectionsDaily[i - 1][StateName[name]]);
-                if ((i % 7) === 0) {
-                    allWeek.push([((i / 7) - 1), start, weekNum]);
-                    weekNum = 0;
-                }
-            }
-            start += 1;
-        }
-
         heatMap.setOption({
             title: {
                 top: 30,
@@ -147,9 +131,6 @@ class Charts extends Component {
             tooltip: {
                 title: "Weekly New Cases of each State ",
                 position: 'top',
-                // formatter: function (params) {
-                //     return params[1];
-                // }
             },
             grid: {
                 height: '55%',
@@ -159,6 +140,8 @@ class Charts extends Component {
             xAxis: {
                 type: 'category',
                 data: function () {
+                    let time = [];
+                    time.push('week-1');
                     for (let i = 1; i < InfectionsDaily.length + 1; i++) {
                         if ((i % 7) === 0) {
                             time.push('week-' + (i / 7));
@@ -184,7 +167,6 @@ class Charts extends Component {
                 }
             },
             visualMap: {
-
                 min: 100,
                 max: 5000,
                 calculable: true,
@@ -198,7 +180,22 @@ class Charts extends Component {
             series: [{
                 name: 'Weekly New Cases',
                 type: 'heatmap',
-                data: allWeek,
+                data: function () {
+                    let allWeek = [];
+                    let weekNum = 0;
+                    let start = 0;
+                    for (let name in StateName) {
+                        for (let i = 1; i < InfectionsDaily.length; i++) {
+                            weekNum += Number(InfectionsDaily[i - 1][StateName[name]]);
+                            if ((i % 7) === 0) {
+                                allWeek.push([((i / 7) - 1), start, weekNum]);
+                                weekNum = 0;
+                            }
+                        }
+                        start += 1;
+                    }
+                    return allWeek;
+                }(),
                 label: {
                     show: false
                 },
@@ -240,11 +237,13 @@ class Charts extends Component {
             }
             return list;
         }();
+        //update the date of chart
         infectionChart.setOption(option);
+        //update the title of chart
         infectionChart.setOption({
                 title: {
                     text: (stateName === 'sum_cases') ? 'Data of Germany' : ('Data of ' + this.props.focusState.properties.name),
-                    top:20
+                    top: 20
                 }
             }
         )
