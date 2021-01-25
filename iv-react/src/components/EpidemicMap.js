@@ -96,18 +96,18 @@ class EpidemicMap extends Component {
                 x = +centroid[0];
                 y = +centroid[1];
                 k = 1.75;
-                let name = (this.props.focusState === null) ? null : focusState.properties.name;
+                let name = (this.props.focusState === null) ? '' : focusState.properties.name;
                 //alert(name)
-                g.append("text")
-                    .text(name)
-                    .attr("x", x)
-                    .attr("y", y)
-                    .style("text-anchor", "middle")
-                    .style("font-size", "8px")
-                    .style("stroke-width", "0px")
-                    .style("fill", "rgb(255, 200, 255)")
-                    .style("font-family", "Times New Roman")
-                //.on('click',this.handleStateChange(null,null))
+                // g.append("text")
+                //     .text(name)
+                //     .attr("x", x)
+                //     .attr("y", y)
+                //     .style("text-anchor", "middle")
+                //     .style("font-size", "8px")
+                //     .style("stroke-width", "0px")
+                //     .style("fill", "rgb(255, 200, 255)")
+                //     .style("font-family", "Times New Roman")
+                // .on('click',this.handleStateChange(null,null))
 
             } else {
                 //do nothing

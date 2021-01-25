@@ -23,7 +23,9 @@ class Home extends Component {
                     focusState={this.state.focusState}
                     onFocusStateChange={this.handleChange}
                 />
-                <Charts/>
+                <Charts
+                    focusState = {this.state.focusState}
+                />
             </div>
         )
     }
