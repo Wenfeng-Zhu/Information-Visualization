@@ -1,8 +1,12 @@
 import React from "react";
+import Polar from "../components/Polar";
 function Population(){
     return(
         <div className='population'>
-            <h1>Population</h1>
+            <Polar
+                typeChart = {'populationChart'}
+                month = {"May"} 
+            ></Polar>
         </div>
     )
 }

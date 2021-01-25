@@ -1,0 +1,23 @@
+#radial-bar-chart {
+  margin: auto;
+  position: relative;
+  box-shadow: 0 0 10px 0 #eee;
+  width: 50%;
+  height: 50%;
+  display: flex;
+}
+.tooltip {
+  position: absolute;
+  box-shadow: 0 0 10px 0 #000000;
+  width: 250px;
+  height: 100px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding: 15px 10px;
+  color: #000000;
+  opacity: 0;
+  background-color: #fff;
+}
+.tooltip > .province {
+  margin-bottom: 15px;
+}
