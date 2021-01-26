@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import "./LineChart.css";
 import * as echarts from 'echarts';
 import {InfectionsDaily} from "../Resource/InfectionsData";
 import {StateName} from '../Resource/StateName';
@@ -12,7 +13,7 @@ class LineChart extends Component {
 
     componentDidMount() {
 
-        let lineChart = echarts.init(document.getElementById('histogram'));
+        let lineChart = echarts.init(document.getElementById('linechart'));
 
         lineChart.setOption({
             tooltip: {
@@ -79,7 +80,7 @@ class LineChart extends Component {
 
     componentDidUpdate(){
         let stateName = (this.props.focusState === null) ? 'sum_cases' : StateName[this.props.focusState.properties.name];
-        let lineChart = echarts.init(document.getElementById('histogram'));
+        let lineChart = echarts.init(document.getElementById('linechart'));
         let option = lineChart.getOption();
         option.series[0].data = function () {
             let list = [];
@@ -102,7 +103,7 @@ class LineChart extends Component {
     render() {
         return (
             <div className="chartsArea">
-                <div id="histogram"/>
+                <div id="linechart"/>
             </div>
         )
     }
