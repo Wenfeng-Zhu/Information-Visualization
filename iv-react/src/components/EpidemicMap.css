@@ -13,15 +13,15 @@
 
 .displayWindow{
     position: absolute;
-    top: 80px;
-    width: 80%;
-    height: 100%;
+    width: 100%;
+    height: 900px;
     z-index: 1;
     /*border:3px solid #000;*/
 }
 
 .allStates {
-    width: 60%;
+    width: 100%;
+    height: 900px;
     fill: rgb(188, 189, 220);
     stroke: #fff;
     stroke-width: 1.25px;

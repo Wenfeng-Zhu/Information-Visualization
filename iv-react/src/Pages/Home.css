@@ -1,8 +1,14 @@
 .home{
+    display: grid;
     position: center;
     margin:auto;
     width: 80vw;
-    height: 1000px;
+    height: 1500px;
     align-items: center;
+    grid-row-gap:20px;
+}
+.firstView{
+    position: relative;
+    height: 900px;
     background-color: #F2F0EB;
 }

@@ -9285,5 +9285,5 @@ export const MapData = {
 }
 export const GeoData = {
     "width": 800,
-    "height": 900,
+    "height": 850,
 }

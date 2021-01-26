@@ -2,14 +2,19 @@ import React, {Component} from "react";
 import './Charts.css'
 import * as echarts from 'echarts';
 import {InfectionsDaily} from "../Resource/InfectionsData";
+import {DeathData} from "../Resource/DeathData";
 import {StateName} from '../Resource/StateName'
+import {RecoverData} from "../Resource/RecoverData";
+import 'echarts-gl';
 
 class Charts extends Component {
+
     constructor(props) {
         super(props);
     }
 
     componentDidMount() {
+
         let infectionChart = echarts.init(document.getElementById('histogram'));
         infectionChart.setOption({
             title: {
@@ -25,7 +30,7 @@ class Charts extends Component {
                     let textArr = [];
                     textArr.push(params[0].name);
                     for (let i = 0; i < params.length; i++) {
-                        textArr.push(params[i].seriesName + ' : '+params[i].value);
+                        textArr.push(params[i].seriesName + ' : ' + params[i].value);
                     }
                     return textArr.join('<br/>');
                 }
@@ -120,105 +125,127 @@ class Charts extends Component {
                 },
             ]
         });
-
-        let heatMap = echarts.init(document.getElementById('heatMap'));
-        heatMap.setOption({
+        let deathChart = echarts.init(document.getElementById('histogram-1'));
+        deathChart.setOption({
             title: {
-                top: 30,
-                left: 'start',
-                text: 'Weekly New Cases of each State'
+                text: 'Recover and Death of Germany',
+                top: 20,
             },
             tooltip: {
-                title: "Weekly New Cases of each State ",
-                position: 'top',
+                trigger: 'axis',
+                axisPointer: {
+                    type: 'shadow'
+                },
+                formatter: function (params) {
+                    let textArr = [];
+                    textArr.push(params[0].name);
+                    for (let i = 0; i < params.length; i++) {
+                        textArr.push(params[i].seriesName + ' : ' + Math.abs(params[i].value));
+                    }
+                    return textArr.join('<br/>');
+                }
+            },
+            legend: {
+                top: 20,
+                right: 40,
+                data: ['Recover', 'Death']
             },
             grid: {
-                height: '55%',
-                top: '20%',
-                left: '20%'
+                left: '3%',
+                right: '4%',
+                bottom: '10%',
+                top: '25%',
+                containLabel: true
             },
             xAxis: {
                 type: 'category',
+                splitLine: {show: false},
                 data: function () {
-                    let time = [];
-                    time.push('week-1');
-                    for (let i = 1; i < InfectionsDaily.length + 1; i++) {
-                        if ((i % 7) === 0) {
-                            time.push('week-' + (i / 7));
-                        }
+                    var list = [];
+                    for (var i = 0; i < DeathData.length; i++) {
+                        list.push(DeathData[i].date);
                     }
-                    return time;
-                }(),
-                splitArea: {
-                    show: true
-                }
+                    return list;
+                }()
             },
             yAxis: {
-                type: 'category',
-                data: function () {
-                    let nameList = [];
-                    for (let i in StateName) {
-                        nameList.push(i.toString())
-                    }
-                    return nameList;
-                }(),
-                splitArea: {
-                    show: true
-                }
+                type: 'value'
             },
-            visualMap: {
-                min: 100,
-                max: 5000,
-                calculable: true,
-                orient: 'horizontal',
-                left: 'center',
-                bottom: '5%',
-                itemWidth: '20%',
-                itemHeight: '300%'
+            dataZoom: [
+                {
+                    show: true,
+                    start: 10,
+                    end: 20,
+                    fillerColor: '#F2F0EB',
+                    borderColor: '#5196A6',
+                    bottom: '2%'
+                },
+                {
+                    type: 'inside',
+                    start: 1,
+                    end: 100,
 
-            },
-            series: [{
-                name: 'Weekly New Cases',
-                type: 'heatmap',
-                data: function () {
-                    let allWeek = [];
-                    let weekNum = 0;
-                    let start = 0;
-                    for (let name in StateName) {
-                        for (let i = 1; i < InfectionsDaily.length; i++) {
-                            weekNum += Number(InfectionsDaily[i - 1][StateName[name]]);
-                            if ((i % 7) === 0) {
-                                allWeek.push([((i / 7) - 1), start, weekNum]);
-                                weekNum = 0;
-                            }
-                        }
-                        start += 1;
-                    }
-                    return allWeek;
-                }(),
-                label: {
-                    show: false
-                },
-                emphasis: {
-                    itemStyle: {
-                        shadowBlur: 10,
-                        shadowColor: 'rgba(0, 0, 0, 0.5)'
-                    }
-                },
-                itemStyle: {
-                    normal: {
-                        borderColor: '#E1B753',
-                        borderWidth: 0.1
-                    }
                 }
-            }]
+            ],
+            series: [
+                {
+                    name: 'Recover',
+                    type: 'bar',
+                    stack: 'all',
+                    itemStyle: {
+                        barBorderColor: 'rgba(0,0,0,0)',
+                        color: '#9CC1D9'
+                    },
+                    emphasis: {
+                        itemStyle: {
+                            barBorderColor: 'rgba(0,0,0,0)',
+                            color: '#9AD99E'
+                        }
+                    },
+                    data: function () {
+                        let list = [];
+                        let sum = 0;
+                        for (let i = 0; i < RecoverData.length; i++) {
+                            //sum += Number(RecoverData[i].recovers);
+                            list.push(Number(RecoverData[i].recovers));
+                        }
+                        return list;
+                    }()
+                },
+                {
+                    name: 'Death',
+                    type: 'bar',
+                    stack: 'all',
+                    label: {
+                        show: false,
+                        position: 'top'
+                    },
+                    itemStyle: {
+                        barBorderColor: 'rgba(0,0,0,0)',
+                        color: '#8C2727'
+                    },
+                    data: function () {
+                        var list = [];
+                        for (let i = 0; i < DeathData.length; i++) {
+                            list.push(-Number(DeathData[i].sum_cases));
+                        }
+                        return list;
+                    }()
+                },
+            ]
         });
 
+
+    }
+
+    redrawHeatMap(){
+        //alert('before'+this.heatMap_2D);
+        this.heatMap_2D = !this.heatMap_2D;
+        alert('after'+this.heatMap_2D);
     }
 
     componentDidUpdate() {
         let stateName = (this.props.focusState === null) ? 'sum_cases' : StateName[this.props.focusState.properties.name];
-
         let infectionChart = echarts.init(document.getElementById('histogram'));
         let option = infectionChart.getOption();
         option.series[0].data = function () {
@@ -232,7 +259,7 @@ class Charts extends Component {
         }();
         option.series[1].data = function () {
             let list = [];
-            for (var i = 0; i < InfectionsDaily.length; i++) {
+            for (let i = 0; i < InfectionsDaily.length; i++) {
                 list.push(Number(InfectionsDaily[i][stateName]));
             }
             return list;
@@ -247,6 +274,10 @@ class Charts extends Component {
                 }
             }
         )
+        // let heatMap = echarts.init(document.getElementById('heatMap'));
+        // heatMap.setOption(this.heatMap_2D?this.hmOption_2D:this.hmOption_3D);
+
+
 
 
     }
@@ -254,8 +285,10 @@ class Charts extends Component {
     render() {
         return (
             <div className="chartsArea">
-                <div id="histogram" style={{}}/>
-                <div id="heatMap" style={{}}/>
+                <div id="histogram"/>
+                <div id='histogram-1'/>
+
+
             </div>
         )
     }

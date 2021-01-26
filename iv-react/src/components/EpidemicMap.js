@@ -96,7 +96,7 @@ class EpidemicMap extends Component {
                 x = +centroid[0];
                 y = +centroid[1];
                 k = 1.75;
-                let name = (this.props.focusState === null) ? '' : focusState.properties.name;
+                //let name = (this.props.focusState === null) ? '' : focusState.properties.name;
                 //alert(name)
                 // g.append("text")
                 //     .text(name)
