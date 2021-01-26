@@ -1,8 +1,7 @@
 import React, {Component} from "react";
 import './Home.css'
 import EpidemicMap from "../components/EpidemicMap";
-import Charts from '../components/Charts';
-import {HeatMap} from '../components/HeatMap';
+import LineChart from "../components/LineChart";
 
 class Policies extends Component {
     constructor(props) {
@@ -21,16 +20,13 @@ class Policies extends Component {
     render() {
         return (
             <div className='policies'>
-                <div className='firstView'>
-                    <EpidemicMap
-                        focusState={this.state.focusState}
-                        onFocusStateChange={this.handleChange}
-                    />
-                    <Charts
-                        focusState = {this.state.focusState}
-                    />
-                </div>
-                <HeatMap/>
+                <EpidemicMap
+                    focusState={this.state.focusState}
+                    onFocusStateChange={this.handleChange}
+                />
+                <LineChart
+
+                />
             </div>
         )
     }
