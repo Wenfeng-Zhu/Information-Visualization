@@ -30,11 +30,25 @@ class Polar extends Component {
         const typeChart = this.props.typeChart;
         const data = getDateOfStates();
         const width = 800;
-        const height = 800;
+        const height = 900;
         const innerRadius = 5;
         const outerRadius = 400;
-        const chartColor = 'rgba(7, 92, 214, .7)'
-        const gridLineColor = 'rgb(210, 214, 218)'
+        const chartColor = 'rgba(7, 92, 214, .7)';
+        const gridLineColor = 'rgb(210, 214, 218)';
+
+        const svg = d3.select('.diagramm')
+        .append('svg')
+        .attr('width', width)
+        .attr('height', height)
+        .append('g')
+        .attr('transform', `translate(${width / 2}, ${height / 2})`)
+        
+        const zoom = d3.zoom()
+            .on('zoom', (event) => {
+            svg.attr('transform', event.transform);
+        })
+        .scaleExtent([0.5, 4]);
+
         var radiusScale;
 
         if (month === "May" || month === "June" || month === "July" || month === "August" || month === "September") {
@@ -54,34 +68,27 @@ class Polar extends Component {
         .outerRadius(outerRadius)
         .padAngle(Math.PI /100) 
 
-        const svg = d3.select(".diagramm").append('svg')
-
         var toolTip;
         if (typeChart === "gdpChart") {
-            svg
-            .attr('width', width)
-            .attr('height', height + 100)
-            .append("text")
-            .attr("x", (width / 2))             
-            .attr("y", height * 0.5 / 8 )
+            svg.append("text")
+            .attr("x", 0)             
+            .attr("y", -height / 2 * 0.95)
             .attr("text-anchor", "middle")  
             .style("font-size", "16px") 
             .style("text-decoration", "underline")  
             .text("The relationship between the epidemic and GRP per capita");
 
             // set tooltip
-            toolTip = svg
+            toolTip = d3.select('#dropdownBox')
                 .append('div')
                 .attr('class', 'tooltip')
             toolTip.html(
                 `
                     <div class="state">
-                    </div>
-                    <div class="state">
                         <span>State:</span>
                         <span class="value"></span>
                     </div>
-                    <div class="grp">
+                    <div class="type">
                         <span>GRP per capita:</span>
                         <span class="value"></span>
                     </div>
@@ -93,30 +100,25 @@ class Polar extends Component {
             )
         }
         else if (typeChart === 'populationChart') {
-            svg
-            .attr('width', width)
-            .attr('height', height + 100)
-            .append("text")
-            .attr("x", (width / 2))             
-            .attr("y", height * 0.5 / 8 )
+            svg.append("text")
+            .attr("x", 0)             
+            .attr("y", -height / 2 * 0.95)
             .attr("text-anchor", "middle")  
             .style("font-size", "16px") 
             .style("text-decoration", "underline")  
             .text("The relationship between the epidemic and population density");
-
+            
             // set tooltip
-            toolTip = svg
+            toolTip = d3.select('#dropdownBox')
                 .append('div')
                 .attr('class', 'tooltip')
             toolTip.html(
                 `
                     <div class="state">
-                    </div>
-                    <div class="state">
                         <span>State:</span>
                         <span class="value"></span>
                     </div>
-                    <div class="population">
+                    <div class="type">
                         <span>popultation density:</span>
                         <span class="value"></span>
                     </div>
@@ -130,11 +132,13 @@ class Polar extends Component {
 
         drawGrid();
         drawDetail();
-        
+        svg.call(d3.zoom().scaleExtent([0.5, 4]).on("zoom", function (event) {
+            svg.attr("transform", 'translate(400, 400) scale('+ event.transform.k+','+ event.transform.k+')')
+        }))
+
         function drawGrid() {
             const gridWrapper = svg
             .append('g')
-            .attr('transform', `translate(${width / 2}, ${height / 2 + height * 1 / 8})`)
             .attr('class', 'grid-wrapper')
             .attr('fill', 'transparent')
             .attr('stroke', gridLineColor)
@@ -176,13 +180,12 @@ class Polar extends Component {
             // 饼图数据
             var pieData
             if (typeChart === "gdpChart") 
-                pieData = d3.pie().value(d => d.GRP)(data)
+                pieData = d3.pie().value(d => d.grp)(data)
             else 
                 pieData = d3.pie().value(d => d.populationDensityPerSqKm)(data)
 
             var arcs = svg
                 .append('g')
-                .attr('transform', `translate(${width / 2}, ${height / 2 + height * 1 / 8})`)
                 .attr('class', 'arcs')
                 .selectAll('g')
                 .data(pieData)
@@ -192,7 +195,6 @@ class Polar extends Component {
                 .attr('fill', chartColor)
                 .attr('d', function (d) {
                     // 动态设定外半径
-                    console.log(d.data.SevenDaysIncidence[month]);
                     arc.outerRadius(radiusScale(parseFloat(d.data.SevenDaysIncidence[month])))
                     // 注册path data
                     return arc(d)
@@ -203,12 +205,13 @@ class Polar extends Component {
                         .attr('opacity', '.85')
 
                     toolTip.style('opacity', 1)
-                    toolTip.select('.state .value').text(d.data.state)
-                    if (typeChart == "gdpChart") 
-                        toolTip.select('.grp .value').text(d.data.GRP + '€')
-                    else
-                        toolTip.select('.population .value').text(d.data.populationDensityPerSqKm + '/km^2')
-                    toolTip.select('.SevenDaysIncidence .incidence').text(d.data.SevenDaysIncidence[month])
+                    toolTip.select('.state .value').text(i.data.state)
+                    if (typeChart === "gdpChart") 
+                        toolTip.select('.type .value').text(i.data.grp + '€')
+                    else if (typeChart === "populationChart")
+                        toolTip.select('.type .value').text(i.data.populationDensityPerSqKm + '€')
+                        
+                    toolTip.select('.SevenDaysIncidence .incidence').text(i.data.SevenDaysIncidence[month])
                 })
                 .on('mouseout', function (d, i) {
                     d3.select(this).transition()
@@ -224,7 +227,7 @@ class Polar extends Component {
             for (var i in DataOfStates) {
                 data.push({
                 state: DataOfStates[i].State,
-                GRP: DataOfStates[i].GRPinEuro,
+                grp: DataOfStates[i].GRPinEuro,
                 SevenDaysIncidence: DataOfStates[i].SevenDaysIncidence,
                 populationDensityPerSqKm: DataOfStates[i].populationDensityPerSqKm
                 })
@@ -233,12 +236,11 @@ class Polar extends Component {
             data.sort((a, b) => b.GRP - a.GRP)
             return data
         }
-
     }  
           
     render(){
       return (
-            <div id="radial-bar-chart" className = "gdpChart">
+            <div id="radial-bar-chart">
                 <div id = "dropdownBox">
                     <select id = "month" onChange={this.handleClick.bind(this)} value={this.state.selectedMonth}>
                         <option value ="May">May</option>
