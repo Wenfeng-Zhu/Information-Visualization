@@ -25,7 +25,7 @@ class Policies extends Component {
                     onFocusStateChange={this.handleChange}
                 />
                 <LineChart
-
+                    focusState = {this.state.focusState}
                 />
             </div>
         )
