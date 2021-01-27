@@ -3,6 +3,7 @@ import "./LineChart.css";
 import * as echarts from 'echarts';
 import {InfectionsDaily} from "../Resource/InfectionsData";
 import {StateName} from '../Resource/StateName';
+import {PolicyData} from '../Resource/PolicyData';
 
 
 class LineChart extends Component {
@@ -14,6 +15,9 @@ class LineChart extends Component {
     componentDidMount() {
 
         let lineChart = echarts.init(document.getElementById('linechart'));
+
+        var policyList=[];
+
 
         lineChart.setOption({
             tooltip: {
@@ -73,6 +77,16 @@ class LineChart extends Component {
                         }
                         return list;
                     }()
+                },
+                {
+                    type: 'scatter',
+                    itemStyle: {
+                        opacity: 0.8
+                    },
+                    symbolSize: function (val) {
+                        return val[2] * 40;
+                    },
+                    data: [["2020/03/12","1000","0.896"]]
                 }
             ]
         });
