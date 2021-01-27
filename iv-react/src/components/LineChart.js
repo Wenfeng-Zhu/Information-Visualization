@@ -90,7 +90,6 @@ class LineChart extends Component {
                                     var datepolicy = [];
                                     datepolicy.push(PolicyData[0].DE[i].Date);
                                     datepolicy.push(InfectionsDaily[n].sum_cases);
-                                    
                                     list.push(datepolicy);
                                 }
                             }
@@ -112,6 +111,20 @@ class LineChart extends Component {
                 list.push(Number(InfectionsDaily[i][stateName]));
             }
             return list;
+        }();
+        option.series[1].data = function(){
+            let list = [];
+            for (var i = 0; i < PolicyData[0].stateName.length; i++) {
+                for(var n = 0; n < InfectionsDaily.length; n++){
+                    if(InfectionsDaily[n].date == PolicyData[0].stateName[i].Date){
+                        var datepolicy = [];
+                        datepolicy.push(PolicyData[0].stateName[i].Date);
+                        datepolicy.push(InfectionsDaily[n].sum_cases);
+                        list.push(datepolicy);
+                    }
+                }
+            }
+
         }();
         lineChart.setOption(option);
         lineChart.setOption({
