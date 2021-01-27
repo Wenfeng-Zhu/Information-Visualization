@@ -15,7 +15,6 @@ class LineChart extends Component {
     componentDidMount() {
 
         let lineChart = echarts.init(document.getElementById('linechart'));
-        let stateName = (this.props.focusState === null) ? 'sum_cases' : StateName[this.props.focusState.properties.name];
 
 
 
@@ -103,10 +102,8 @@ class LineChart extends Component {
 
         lineChart.on('mouseover', {seriesName: 'policy'}, function(params){
 
-            alert(params.name);
-            var title = document.getElementById("policyTitle")
-            title.innerHTML="Policies of " + ((stateName === 'sum_cases') ? 'Germany' : + this.props.focusState.properties.name);
-
+            var content = document.getElementById("policyContent")
+            content.innerHTML=params.value;
         });
     }
 
@@ -130,6 +127,7 @@ class LineChart extends Component {
                         var datepolicy = [];
                         datepolicy.push(PolicyData[0][policystateName][i].Date);
                         datepolicy.push(InfectionsDaily[n][stateName]);
+                        datepolicy.push(PolicyData[0][policystateName][i].Policy);
                         list.push(datepolicy);
                     }
                 }
@@ -152,7 +150,7 @@ class LineChart extends Component {
                 <div id="linechart"/>
                 <div id="policyWindow">
                     <h1 id="policyTitle"/>
-                    <h3 id="policyContent"/>
+                    <h2 id="policyContent"/>
                 </div>
                 
             </div>
