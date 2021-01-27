@@ -86,12 +86,11 @@ class LineChart extends Component {
                         var list = [];
                         for (var i = 0; i < PolicyData[0].DE.length; i++) {
                             for(var n = 0; n < InfectionsDaily.length; n++){
-                                if(InfectionsDaily[n].date == PolicyData[0].DE[i].date){
-                                    alert(InfectionsDaily[n].date);
+                                if(InfectionsDaily[n].date == PolicyData[0].DE[i].Date){
                                     var datepolicy = [];
-                                    datepolicy.push(PolicyData[0].DE[i].date);
+                                    datepolicy.push(PolicyData[0].DE[i].Date);
                                     datepolicy.push(InfectionsDaily[n].sum_cases);
-                                    // datepolicy.push(PolicyData[0].DE[i].policy);
+                                    
                                     list.push(datepolicy);
                                 }
                             }
