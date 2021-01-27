@@ -1,15 +1,15 @@
 import React from "react";
 import Polar from "../components/Polar";
 
-function Population(){
+function Economy(){
     return(
-        <div className='population'>
+        <div className='economy'>
             <Polar
-                typeChart = {'populationChart'}
+                typeChart = {'gdpChart'}
                 month = {"May"} 
             ></Polar>
         </div>
     )
 }
 
-export default Population;
+export default Economy;

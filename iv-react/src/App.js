@@ -5,6 +5,7 @@ import Home from "./Pages/Home";
 import Population from "./Pages/Population";
 import Information from "./Pages/Information";
 import Policies from "./Pages/Policies";
+import Economy from './Pages/Economy';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
                 <Route path = '/' exact component={Home}/>
                 <Route path = '/policies' component={Policies}/>
                 <Route path='/population' component={Population}/>
+                <Route path='/economy' component={Economy}/>
                 <Route path='/information' component={Information}/>
             </Switch>
         </Router>

@@ -1,14 +1,23 @@
-.home{
-    display: grid;
-    position: center;
-    margin:auto;
-    width: 80vw;
-    height: 1500px;
-    align-items: center;
-    grid-row-gap:20px;
+.home {
+  display: grid;
+  position: center;
+  margin: auto;
+  width: 80vw;
+  height: 1500px;
+  align-items: center;
+  grid-row-gap: 20px;
 }
-.firstView{
-    position: relative;
-    height: 900px;
-    background-color: #F2F0EB;
+.policies {
+  display: grid;
+  position: center;
+  margin: auto;
+  width: 80vw;
+  height: 900px;
+  align-items: center;
+  grid-row-gap: 20px;
+}
+.firstView {
+  position: relative;
+  height: 900px;
+  background-color: #f2f0eb;
 }

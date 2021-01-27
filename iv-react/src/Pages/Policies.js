@@ -20,13 +20,15 @@ class Policies extends Component {
     render() {
         return (
             <div className='policies'>
-                <EpidemicMap
-                    focusState={this.state.focusState}
-                    onFocusStateChange={this.handleChange}
-                />
-                <LineChart
-                    focusState = {this.state.focusState}
-                />
+                <div className='firstView'>
+                    <EpidemicMap
+                        focusState={this.state.focusState}
+                        onFocusStateChange={this.handleChange}
+                    />
+                    <LineChart
+                        focusState = {this.state.focusState}
+                    />
+                </div>
             </div>
         )
     }

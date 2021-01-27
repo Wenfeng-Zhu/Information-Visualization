@@ -5,7 +5,7 @@ function Information(){
     return(
         <div className='information'>
             <h2>This project</h2>
-            This Informationsvisualisierung project focuses on the cumulative number of infections and the number of new infections by state in Germany since March, which are also in relation to population density. The homepage also shows the cure data and death data for the whole Germany. In addition, we can use the graphs to determine whether the relevant policies of the states have had a positive effect on the suppression of the epidemic.
+            This Informationsvisualisierung project focuses on the cumulative number of infections and the number of new infections by state in Germany since March, which are also in relation to population density and the economy. The homepage also shows the cure data and death data for the whole Germany. In addition, we can use the graphs to determine whether the relevant policies of the states have had a positive effect on the suppression of the epidemic.
             <br /> <br />
             You can find our project for more details on GitHub:
             <br />

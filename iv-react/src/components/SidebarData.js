@@ -23,6 +23,12 @@ export const SidebarData = [
         cName: 'nav-text'
     },
     {
+        title: 'Economy',
+        path:'/economy',
+        icon: <AiIcons.AiFillMoneyCollect/>,
+        cName: 'nav-text'
+    },
+    {
         title: 'About us',
         path:'/information',
         icon: <FaIcons.FaInfo/>,
