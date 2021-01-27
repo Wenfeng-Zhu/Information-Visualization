@@ -78,6 +78,27 @@ class LineChart extends Component {
                         return list;
                     }()
                 },
+                {
+                    name: 'showpolicy',
+                    type: 'scatter',
+                    symbolSize: 15,
+                    data: function(){
+                        var list = [];
+                        for (var i = 0; i < PolicyData[0].DE.length; i++) {
+                            for(var n = 0; n < InfectionsDaily.length; n++){
+                                if(InfectionsDaily[n].date == PolicyData[0].DE[i].date){
+                                    alert(InfectionsDaily[n].date);
+                                    var datepolicy = [];
+                                    datepolicy.push(PolicyData[0].DE[i].date);
+                                    datepolicy.push(InfectionsDaily[n].sum_cases);
+                                    // datepolicy.push(PolicyData[0].DE[i].policy);
+                                    list.push(datepolicy);
+                                }
+                            }
+                        }
+                        return list;
+                    }()
+                },
             ]
         });
     }
