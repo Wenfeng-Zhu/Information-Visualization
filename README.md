@@ -13,38 +13,54 @@ It is a group project of Ludwig-Maximilians-Universität München(LMU) informati
 # Install
 This project uses [node](https://nodejs.org/en/) and [npm](https://www.npmjs.com/). Go check them out if you don't have them locally installed.  
 You will need to go into this folder  
-`$ cd IV-Web`  
+`$ cd iv-react`  
  
  Then you will need to install the necessary packages.  
 `$ npm install`  
 
-At last you should manually start Express' local server.  
+At last you should manually start React app.  
     `$ npm start`  
 
 Then open the http://localhost:3000/ to run the web-page.
 
 # Feature
+Home Page:
 - An epidemic map  
 Color based on the epidemic and click, zoom functionality, event monitoring of the other Components 
 
-- A continuous histogram showing the epidemic situation in Germany (cumulative confirmed and deaths).  
+- Continuous histograms show the epidemic situation in Germany (cumulative confirmed, recovers and deaths).  
 
-- A calendar of epidemic situation  
-Mouse interaction, show of epidemic prevention policy data
+- Heatmap shows weekly new cases of each state in germany
+Realized mouse interaction, zoom functionality, data filter. 
+Provide 2D and 3D versions of Heatmap.
 
 - Interactive display of multi-dimensional data————Pie chart based on polar coordinates (Population, Economy)  
 Mouse interaction and zoom functionality via Mouse wheel
 
 - Cross-domain data transmission based on local server (Node.js-express).
 
-TODO:
-- Implementation of the database
-- Cross-domain data interaction based on cloud server
-- responsive design
+Policies Page:
+- An epidemic map  
+Color based on the epidemic and click, zoom functionality, event monitoring of the other Components 
+
+- A line chart with scatter plot show the relationship between infection and policies.
+Mouse interaction and zoom functionality.
+
+- An output area for policies.
+Interactive between map, scatter plot and output area.
+
+Population and Economy Page:
+- Interactive display of multi-dimensional data————Pie chart based on polar coordinates (Population, Economy)  
+Mouse interaction and zoom functionality via Mouse wheel
+
+- Cross-domain data transmission based on local server (Node.js-express).
 
 # Interface display
-- Basic Info
-![Basic Info](https://raw.githubusercontent.com/Wenfeng-Zhu/Information-Visualization/master/Basic%20Info.png)  
+- Home Page
+![home](https://github.com/Wenfeng-Zhu/Information-Visualization/blob/master/home-page.png)  
 
-- Pie chart based on polar coordinates
-![two](https://raw.githubusercontent.com/Wenfeng-Zhu/Information-Visualization/master/Population%26Economy.png)
+- Policies Page
+![policy](https://github.com/Wenfeng-Zhu/Information-Visualization/blob/master/policies-page.png)
+
+- Population Page
+![population](https://github.com/Wenfeng-Zhu/Information-Visualization/blob/master/population-page.png)
