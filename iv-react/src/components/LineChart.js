@@ -23,7 +23,16 @@ class LineChart extends Component {
                 trigger: 'axis',
                 position: function (pt) {
                     return [pt[0], '10%'];
-                }
+                },
+                formatter: function (params) {
+                    let textArr = [];
+                    textArr.push('Infection:'+params[0].value);
+                    for (let i = 1; i < params.length; i++) {
+                        textArr.push(params[i].seriesName);
+                    }
+                    console.log(textArr);
+                    return textArr.join('<br/>');
+                },
             },
             title: {
                 left: 'center',
