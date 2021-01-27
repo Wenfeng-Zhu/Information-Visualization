@@ -102,8 +102,16 @@ class LineChart extends Component {
 
         lineChart.on('mouseover', {seriesName: 'policy'}, function(params){
 
-            var content = document.getElementById("policyContent")
-            content.innerHTML=params.value;
+            var pdata = params.value.toString().split(",");
+            var publishedDate = pdata[0]; 
+            var currentInfect = pdata[1];
+            var pContent = pdata[2];
+            var date = document.getElementById("publishedDate");
+            var infection = document.getElementById("currentInfection");
+            var content = document.getElementById("policyContent");
+            date.innerHTML="Release date: " + publishedDate;
+            infection.innerHTML="Current infection: " + currentInfect;
+            content.innerHTML=pContent;
         });
     }
 
@@ -150,7 +158,9 @@ class LineChart extends Component {
                 <div id="linechart"/>
                 <div id="policyWindow">
                     <h1 id="policyTitle">Policies</h1>
-                    <h2 id="policyContent"/>
+                    <h2 id="publishedDate"/>
+                    <h3 id="currentInfection"/>
+                    <h4 id="policyContent"/>
                 </div>
                 
             </div>
