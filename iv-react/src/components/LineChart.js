@@ -15,7 +15,7 @@ class LineChart extends Component {
     componentDidMount() {
 
         let lineChart = echarts.init(document.getElementById('linechart'));
-
+        let stateName = (this.props.focusState === null) ? 'sum_cases' : StateName[this.props.focusState.properties.name];
 
 
 
@@ -79,7 +79,7 @@ class LineChart extends Component {
                     }()
                 },
                 {
-                    name: 'showpolicy',
+                    name: 'policy',
                     type: 'scatter',
                     symbolSize: 15,
                     data: function(){
@@ -90,6 +90,7 @@ class LineChart extends Component {
                                     var datepolicy = [];
                                     datepolicy.push(PolicyData[0].DE[i].Date);
                                     datepolicy.push(InfectionsDaily[n].sum_cases);
+                                    datepolicy.push(PolicyData[0].DE[i].Policy);
                                     list.push(datepolicy);
                                 }
                             }
@@ -98,6 +99,14 @@ class LineChart extends Component {
                     }()
                 },
             ]
+        });
+
+        lineChart.on('mouseover', {seriesName: 'policy'}, function(params){
+
+            alert(params.name);
+            var title = document.getElementById("policyTitle")
+            title.innerHTML="Policies of " + ((stateName === 'sum_cases') ? 'Germany' : + this.props.focusState.properties.name);
+
         });
     }
 
@@ -133,8 +142,7 @@ class LineChart extends Component {
                 text: (stateName === 'sum_cases') ? 'The relationship between infection and policy - Germany' : ('The relationship between infection and policy - ' + this.props.focusState.properties.name),
                 top: 20
             }
-        }
-    )
+        });
     }
 
 
@@ -142,6 +150,11 @@ class LineChart extends Component {
         return (
             <div className="chartsArea">
                 <div id="linechart"/>
+                <div id="policyWindow">
+                    <h1 id="policyTitle"/>
+                    <h3 id="policyContent"/>
+                </div>
+                
             </div>
         )
     }
