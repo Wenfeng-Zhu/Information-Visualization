@@ -16,6 +16,8 @@
   align-items: center;
   grid-row-gap: 20px;
 }
+
+
 .firstView {
   position: relative;
   height: 900px;

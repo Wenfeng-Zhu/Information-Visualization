@@ -23,6 +23,9 @@
 }
 
 #policyWindow{
+    display: grid;
+    grid-template-rows: 20% 20% 20% 40%;
+    justify-items: center;
     margin-left: auto;
     margin-right: 20px;
     margin-top: 20px;
@@ -35,5 +38,29 @@
     height: 350px;
     background-color:#F2F2F2;
     box-shadow:2px 3px 3px #c8c8c8 ;
+}
 
+#policyTitle{
+    font-family:Gill Sans, sans-serif ;
+    font-weight: 800;
+}
+
+#publishedDate{
+    font-family:Gill Sans, sans-serif ;
+    text-align: center;
+    width: 80%;
+    font-weight: 800;
+    border-color: black;
+    border-width: 5px;
+}
+
+#currentInfection{
+    font-family:Gill Sans, sans-serif ;
+    font-weight: 800;
+}
+
+#policyContent{
+    width: 80%;
+    font-family:Gill Sans, sans-serif ;
+    font-weight: 800;
 }

@@ -10,14 +10,30 @@ class LineChart extends Component {
 
     constructor(props) {
         super(props);
+        this.rewriteText = this.rewriteText.bind(this);
+    }
+
+    rewriteText(params){
+        let date = document.getElementById("publishedDate");
+        let infection = document.getElementById("currentInfection");
+        let content = document.getElementById("policyContent");
+        date.innerHTML="Release date: " + params.value[0];
+        infection.innerHTML="Current infection: " + params.value[1];
+        content.innerHTML=params.value[2];
+    }
+
+    textInit(){
+        let date = document.getElementById("publishedDate");
+        let infection = document.getElementById("currentInfection");
+        let content = document.getElementById("policyContent");
+        date.innerHTML='Click the "policy scatter point" <br/> in the line chart to view the corresponding policy';
+        infection.innerHTML='';
+        content.innerHTML='';
+
     }
 
     componentDidMount() {
-
         let lineChart = echarts.init(document.getElementById('linechart'));
-
-
-
         lineChart.setOption({
             tooltip: {
                 trigger: 'axis',
@@ -67,7 +83,7 @@ class LineChart extends Component {
                     symbol: 'none',
                     sampling: 'lttb',
                     itemStyle: {
-                        color: 'rgb(255, 70, 131)'
+                        color: '#F24141'
                     },
                     areaStyle: {
                         color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
@@ -75,7 +91,7 @@ class LineChart extends Component {
                             color: 'rgb(255, 158, 68)'
                         }, {
                             offset: 1,
-                            color: 'rgb(255, 70, 131)'
+                            color: '#F24141'
                         }])
                     },
                     data: function () {
@@ -84,12 +100,13 @@ class LineChart extends Component {
                             list.push(InfectionsDaily[i].sum_cases);
                         }
                         return list;
-                    }()
+                    }(),
+                    z: 1
                 },
                 {
                     name: 'policy',
-                    type: 'scatter',
-                    symbolSize: 15,
+                    type: 'effectScatter',
+                    symbolSize: 12,
                     data: function(){
                         var list = [];
                         for (var i = 0; i < PolicyData[0].DE.length; i++) {
@@ -104,20 +121,14 @@ class LineChart extends Component {
                             }
                         }
                         return list;
-                    }()
+                    }(),
+                    z:2,
                 },
+
             ]
         });
-
-        lineChart.on('mouseover', {seriesName: 'policy'}, function(params){
-
-            var date = document.getElementById("publishedDate");
-            var infection = document.getElementById("currentInfection");
-            var content = document.getElementById("policyContent");
-            date.innerHTML="Release date: " + params.value[0];
-            infection.innerHTML="Current infection: " + params.value[1];
-            content.innerHTML=params.value[2];
-        });
+        lineChart.on('click', {seriesName: 'policy'}, this.rewriteText);
+        this.textInit();
     }
 
     componentDidUpdate(){
@@ -154,6 +165,7 @@ class LineChart extends Component {
                 top: 20
             }
         });
+        this.textInit();
     }
 
 
