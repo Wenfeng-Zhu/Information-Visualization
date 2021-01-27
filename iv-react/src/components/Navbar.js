@@ -20,7 +20,7 @@ function Navbar() {
                         onClick={showSidebar}
                     />
                 </Link>
-                <p className='team'>COVID-19 Team-28</p>
+                <div className='team'><p className='team-1'>COVID-19</p><p className='team-2'>Team-28</p></div>
 
                 <img src={Logo} className='logoImage'/>
             </div>

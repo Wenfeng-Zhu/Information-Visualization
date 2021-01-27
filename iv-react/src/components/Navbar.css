@@ -2,10 +2,10 @@
     background-color: #5196A6;
     height: 80px;
     display: flex;
-    justify-content: start;
+    /*justify-content: start;*/
     align-items: center;
     z-index: 999;
-    font-family: Futura,Trebuchet MS,Arial,sans-serif;
+
 
     /*align-items: center;*/
     /*justify-content: center;*/
@@ -14,12 +14,31 @@
 
 }
 .team{
-    margin-left: 70%;
+    display: grid;
+    grid-template-rows: 55% 45%;
+    justify-items: center;
+    align-items: center;
+    margin-left: 81%;
+    margin-top: 10px;
+    height: 65px;
+    font-family: Futura,Trebuchet MS,Arial,sans-serif;
+}
+
+.team-1{
+    font-size: 35px;
+    height: 45px;
+    text-align: center;
+}
+.team-2{
+    font-size: 23px;
+    height: 35px;
+    text-align: center;
 }
 
 .logoImage{
     height: 80%;
-    margin-left: 1%;
+    margin-left: auto;
+    margin-right: 3%;
 }
 .menu-bars{
     margin-left: 2rem;
