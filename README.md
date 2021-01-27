@@ -3,7 +3,11 @@ LMU-WS20/21-IV-Group 28-COVID Visualization
 ***
 # Introduction
 This is an information visualization project on the status of COVID-19 in the various German states.  
-It is a group project of Ludwig-Maximilians-Universität München(LMU) information visualization course.  
+It is a group project of Ludwig-Maximilians-Universität München(LMU) information visualization course. 
+### Project Version
+There are two main versions of the project in the development process, which are built through the [express](https://expressjs.com/) on backend and [react](https://reactjs.org/) on frontend.    
+**The react version is an optimized and upgraded version of express**, and it has been deployed to the remote server of LMU. It can be accessed through this URL: http://www.cip.ifi.lmu.de/~zhuw/
+
 ### Team members
 - Wenfeng Zhu (Master Human-Computer Interaction)
 - Shaohua Tong (Master Computer Science)
@@ -13,54 +17,60 @@ It is a group project of Ludwig-Maximilians-Universität München(LMU) informati
 # Install
 This project uses [node](https://nodejs.org/en/) and [npm](https://www.npmjs.com/). Go check them out if you don't have them locally installed.  
 You will need to go into this folder  
-`$ cd iv-react`  
- 
+ ```sh
+$ cd iv-react  or  $ cd iv-express 
+```
  Then you will need to install the necessary packages.  
-`$ npm install`  
+ ```sh
+$ npm install
+```
+At last you should manually start React/Express app.  
+```sh
+$ npm start
+```
+Then open the http://localhost:3000/(Express: http://localhost:9000) to run the web-page.
 
-At last you should manually start React app.  
-    `$ npm start`  
+# Feature Description(React Version)
+The website has a total of five interfaces, and the front-end routing method is used to achieve interface jumps, and does not involve back-end data interaction.
+## Home Page:
+### Epidemic Map  
+- Color based on the epidemic situation and mousemove
+- Zoom function based on mouse click 
+- Data interaction with other components
 
-Then open the http://localhost:3000/ to run the web-page.
+### Histogram-1
+- Histogram-1: Displays daily the data of **new infections** and **total infections** from March to November.
+- The epidemic data of all of Germany is displayed by default, and it will switch to a different state with the click of the map component.
+- With horizontal axis zoom (time) function.
 
-# Feature
-Home Page:
-- An epidemic map  
-Color based on the epidemic and click, zoom functionality, event monitoring of the other Components 
+### Histogram-2
+- Histogram-1: Displays daily the data of **recovers** and **death** from March to November.
+- The epidemic data of all of Germany is displayed by default.
+- With horizontal axis zoom (time) function.
 
-- Continuous histograms show the epidemic situation in Germany (cumulative confirmed, recovers and deaths).  
+### Heatmap
+- Displays the daily data new cases of each state in germany 
+- Provide **2D** and **3D** versions of Heatmap.
+- The heat map can be **dragged** and **zoomed** with the mouse to facilitate observation from different angles.
 
-- Heatmap shows weekly new cases of each state in germany
-Realized mouse interaction, zoom functionality, data filter. 
-Provide 2D and 3D versions of Heatmap.
+## Policies Page:
+### Epidemic Map
+-same as Home Page
+### Line Chart
+- The epidemic data of all of Germany is displayed by default, and it will switch to a different state with the click of the map component.
+- There are some **scattered points** in the whole chart to represent that a certain policy is released at a certain time.
+- Clicking on a scatter point to display specific information about the policy in the **Text Area** below.
+- With horizontal axis zoom (time) function.
 
-- Interactive display of multi-dimensional data————Pie chart based on polar coordinates (Population, Economy)  
-Mouse interaction and zoom functionality via Mouse wheel
+### Text Area
+- By default, the guidance information that guides the user to click on the scattered points is displayed.
+- After the user clicks on a scatter point, the corresponding policy information is displayed.
 
-- Cross-domain data transmission based on local server (Node.js-express).
+## Population and Economy Page
+- Pie chart based on polar coordinates。
+- The user can select the corresponding month data.
+- The pie chart ratio represents the corresponding population density or GDP per capita, and the polar coordinate represents the average number of new infections per state in the current month.
+- The zoom function through  the mouse wheel.
 
-Policies Page:
-- An epidemic map  
-Color based on the epidemic and click, zoom functionality, event monitoring of the other Components 
-
-- A line chart with scatter plot show the relationship between infection and policies.
-Mouse interaction and zoom functionality.
-
-- An output area for policies.
-Interactive between map, scatter plot and output area.
-
-Population and Economy Page:
-- Interactive display of multi-dimensional data————Pie chart based on polar coordinates (Population, Economy)  
-Mouse interaction and zoom functionality via Mouse wheel
-
-- Cross-domain data transmission based on local server (Node.js-express).
-
-# Interface display
-- Home Page
-![home](https://github.com/Wenfeng-Zhu/Information-Visualization/blob/master/home-page.png)  
-
-- Policies Page
-![policy](https://github.com/Wenfeng-Zhu/Information-Visualization/blob/master/policies-page.png)
-
-- Population Page
-![population](https://github.com/Wenfeng-Zhu/Information-Visualization/blob/master/population-page.png)
+## Infor Page
+- Brief introduction of the project and members.
