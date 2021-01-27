@@ -102,16 +102,12 @@ class LineChart extends Component {
 
         lineChart.on('mouseover', {seriesName: 'policy'}, function(params){
 
-            var pdata = params.value.toString().split(",");
-            var publishedDate = pdata[0]; 
-            var currentInfect = pdata[1];
-            var pContent = pdata[2];
             var date = document.getElementById("publishedDate");
             var infection = document.getElementById("currentInfection");
             var content = document.getElementById("policyContent");
-            date.innerHTML="Release date: " + publishedDate;
-            infection.innerHTML="Current infection: " + currentInfect;
-            content.innerHTML=pContent;
+            date.innerHTML="Release date: " + params.value[0];
+            infection.innerHTML="Current infection: " + params.value[1];
+            content.innerHTML=params.value[2];
         });
     }
 
