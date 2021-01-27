@@ -5,11 +5,11 @@ import {Link} from 'react-router-dom';
 import {SidebarData} from "./SidebarData";
 import './Navbar.css'
 import {IconContext} from "react-icons";
+import Logo from '../Resource/logo.png';
 
 
 function Navbar() {
     const [sidebar, setSidebar] = useState(false);
-
     const showSidebar = () => setSidebar(!sidebar);
     return (
         <>
@@ -20,6 +20,9 @@ function Navbar() {
                         onClick={showSidebar}
                     />
                 </Link>
+                <p className='team'>COVID-19 Team-28</p>
+
+                <img src={Logo} className='logoImage'/>
             </div>
             <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
                 <ul className='nav-menu-items' >

@@ -5,8 +5,22 @@
     justify-content: start;
     align-items: center;
     z-index: 999;
+    font-family: Futura,Trebuchet MS,Arial,sans-serif;
+
+    /*align-items: center;*/
+    /*justify-content: center;*/
+    font-size: calc(15px + 3vmin);
+    color: white;
+
+}
+.team{
+    margin-left: 70%;
 }
 
+.logoImage{
+    height: 80%;
+    margin-left: 1%;
+}
 .menu-bars{
     margin-left: 2rem;
     font-size: 2rem;
@@ -25,6 +39,8 @@
     transition: 850ms;
     z-index: 999;
 }
+
+
 
 .nav-menu.active{
     left: 0;
@@ -73,3 +89,5 @@
 span{
     margin-left: 18px;
 }
+
+

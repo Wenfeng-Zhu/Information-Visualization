@@ -6,31 +6,31 @@ import * as IoIcons from 'react-icons/io';
 export const SidebarData = [
     {
         title: 'Home',
-        path:'/',
+        path:'/~zhuw',
         icon: <AiIcons.AiFillHome/>,
         cName: 'nav-text'
     },
     {
         title: 'Policies',
-        path:'/policies',
+        path:'/~zhuw/policies',
         icon: <IoIcons.IoIosPaper/>,
         cName: 'nav-text'
     },
     {
         title: 'Population',
-        path:'/population',
+        path:'/~zhuw/population',
         icon: <IoIcons.IoMdPeople/>,
         cName: 'nav-text'
     },
     {
         title: 'Economy',
-        path:'/economy',
+        path:'/~zhuw/economy',
         icon: <AiIcons.AiFillMoneyCollect/>,
         cName: 'nav-text'
     },
     {
         title: 'About us',
-        path:'/information',
+        path:'/~zhuw/information',
         icon: <FaIcons.FaInfo/>,
         cName: 'nav-text'
     },
