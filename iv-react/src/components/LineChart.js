@@ -16,7 +16,7 @@ class LineChart extends Component {
 
         let lineChart = echarts.init(document.getElementById('linechart'));
 
-        var policyList=[];
+
 
 
         lineChart.setOption({
@@ -78,16 +78,6 @@ class LineChart extends Component {
                         return list;
                     }()
                 },
-                {
-                    type: 'scatter',
-                    itemStyle: {
-                        opacity: 0.8
-                    },
-                    symbolSize: function (val) {
-                        return val[2] * 40;
-                    },
-                    data: [["2020/03/12","1000","0.896"]]
-                }
             ]
         });
     }
