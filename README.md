@@ -57,7 +57,10 @@ Mouse interaction and zoom functionality via Mouse wheel
 
 # Interface display
 - Home Page
-![Basic Info]()  
+![home](https://github.com/Wenfeng-Zhu/Information-Visualization/blob/master/home-page.png)  
 
 - Policies Page
-![two]()
+![policy](https://github.com/Wenfeng-Zhu/Information-Visualization/blob/master/policies-page.png)
+
+- Population Page
+![population](https://github.com/Wenfeng-Zhu/Information-Visualization/blob/master/population-page.png)
