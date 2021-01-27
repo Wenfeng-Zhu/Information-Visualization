@@ -103,6 +103,7 @@ class LineChart extends Component {
 
     componentDidUpdate(){
         let stateName = (this.props.focusState === null) ? 'sum_cases' : StateName[this.props.focusState.properties.name];
+        const policystateName = (this.props.focusState === null) ? 'DE' : StateName[this.props.focusState.properties.name];
         let lineChart = echarts.init(document.getElementById('linechart'));
         let option = lineChart.getOption();
         option.series[0].data = function () {
@@ -114,17 +115,17 @@ class LineChart extends Component {
         }();
         option.series[1].data = function(){
             let list = [];
-            for (var i = 0; i < PolicyData[0].stateName.length; i++) {
+            for (var i = 0; i < PolicyData[0][policystateName].length; i++) {
                 for(var n = 0; n < InfectionsDaily.length; n++){
-                    if(InfectionsDaily[n].date == PolicyData[0].stateName[i].Date){
+                    if(InfectionsDaily[n].date == PolicyData[0][policystateName][i].Date){
                         var datepolicy = [];
-                        datepolicy.push(PolicyData[0].stateName[i].Date);
-                        datepolicy.push(InfectionsDaily[n].sum_cases);
+                        datepolicy.push(PolicyData[0][policystateName][i].Date);
+                        datepolicy.push(InfectionsDaily[n][stateName]);
                         list.push(datepolicy);
                     }
                 }
             }
-
+            return list;
         }();
         lineChart.setOption(option);
         lineChart.setOption({
