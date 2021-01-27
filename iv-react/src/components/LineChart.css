@@ -1,0 +1,39 @@
+.chartsArea{
+    /*width: 100%;*/
+    display: grid;
+    margin-top: 40px;
+    /*border:3px solid #000;*/
+    justify-content: end;
+    justify-items: end;
+}
+
+#linechart{
+    margin-left: auto;
+    margin-right: 20px;
+    margin-top: 20px;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    /*right: 20px;*/
+    /*top:50px;*/
+    width: 750px;
+    height: 350px;
+    background-color:#F2F2F2;
+    box-shadow:2px 3px 3px #c8c8c8 ;
+}
+
+#policyWindow{
+    margin-left: auto;
+    margin-right: 20px;
+    margin-top: 20px;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    /*right: 20px;*/
+    /*top:50px;*/
+    width: 750px;
+    height: 350px;
+    background-color:#F2F2F2;
+    box-shadow:2px 3px 3px #c8c8c8 ;
+
+}
