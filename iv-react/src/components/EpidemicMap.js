@@ -76,6 +76,15 @@ class EpidemicMap extends Component {
                 return compute(linear(caseNumbers[i]));
             })
             .on("click", this.handleStateChange)
+            .on("mouseover",function(d,i){   
+                d3.select(this)
+                    .attr("fill-opacity", "60%")
+               
+            })
+            .on("mouseout",function(d,i){
+                d3.select(this)
+                .attr("fill-opacity", "100%")
+            });
 
 
     }
