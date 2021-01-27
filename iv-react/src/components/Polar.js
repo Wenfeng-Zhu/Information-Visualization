@@ -209,7 +209,7 @@ class Polar extends Component {
                     if (typeChart === "gdpChart") 
                         toolTip.select('.type .value').text(i.data.grp + '€')
                     else if (typeChart === "populationChart")
-                        toolTip.select('.type .value').text(i.data.populationDensityPerSqKm + '€')
+                        toolTip.select('.type .value').text(i.data.populationDensityPerSqKm + ' per Sqkm')
                         
                     toolTip.select('.SevenDaysIncidence .incidence').text(i.data.SevenDaysIncidence[month])
                 })

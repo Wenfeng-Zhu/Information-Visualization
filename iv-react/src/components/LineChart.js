@@ -149,7 +149,7 @@ class LineChart extends Component {
             <div className="chartsArea">
                 <div id="linechart"/>
                 <div id="policyWindow">
-                    <h1 id="policyTitle"/>
+                    <h1 id="policyTitle">Policies</h1>
                     <h2 id="policyContent"/>
                 </div>
                 
