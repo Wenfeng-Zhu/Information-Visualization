@@ -74,3 +74,6 @@ The website has a total of five interfaces, and the front-end routing method is 
 
 ## Infor Page
 - Brief introduction of the project and members.
+
+# Project Process
+![project process](https://github.com/Wenfeng-Zhu/Information-Visualization/blob/master/ProjectProcess.png)
