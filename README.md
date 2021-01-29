@@ -28,7 +28,7 @@ At last you should manually start React/Express app.
 ```sh
 $ npm start
 ```
-Then open the http://localhost:3000/(Express: http://localhost:9000) to run the web-page.
+Then open the http://localhost:3000/ (Express: http://localhost:9000) to run the web-page.
 
 # Feature Description(React Version)
 The website has a total of five interfaces, and the front-end routing method is used to achieve interface jumps, and does not involve back-end data interaction.
