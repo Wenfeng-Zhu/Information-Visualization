@@ -94,3 +94,7 @@ PopulationPage             |  EconomyPage
 
 # Project Process
 ![project process](https://github.com/Wenfeng-Zhu/Information-Visualization/blob/master/img/ProjectProcess.png)
+
+# Assignment of Tasks
+![project process](https://github.com/Wenfeng-Zhu/Information-Visualization/blob/master/img/Assignment%20of%20tasks.PNG)
+
