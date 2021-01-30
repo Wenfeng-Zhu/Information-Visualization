@@ -28,6 +28,7 @@
     font-size: 35px;
     height: 45px;
     text-align: center;
+    white-space: nowrap;
 }
 .team-2{
     font-size: 23px;

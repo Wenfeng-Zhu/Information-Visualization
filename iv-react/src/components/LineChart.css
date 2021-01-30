@@ -41,26 +41,27 @@
 }
 
 #policyTitle{
-    font-family:Gill Sans, sans-serif ;
-    font-weight: 800;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: 600;
 }
 
 #publishedDate{
-    font-family:Gill Sans, sans-serif ;
+    font-family: 'Trebuchet MS', sans-serif;
     text-align: center;
     width: 80%;
-    font-weight: 800;
+    font-weight: 600;
     border-color: black;
     border-width: 5px;
 }
 
 #currentInfection{
-    font-family:Gill Sans, sans-serif ;
+    font-family: 'Trebuchet MS', sans-serif;
     font-weight: 800;
 }
 
 #policyContent{
     width: 80%;
-    font-family:Gill Sans, sans-serif ;
+    font-family: 'Trebuchet MS', sans-serif;
     font-weight: 800;
+    font-size: 18px;
 }

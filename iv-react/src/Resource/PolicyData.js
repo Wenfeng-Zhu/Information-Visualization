@@ -3,181 +3,181 @@ export const PolicyData =[
     "DE":[
         {
             "Date":"2020/3/23",
-            "Policy":"Deutschland kündigt die Schließung öffentlicher Plätze an und verbietet Versammlungen von mehr als zwei Personen."
+            "Policy":"Germany announces the closure of public places and bans gatherings of more than two people."
         },
         {
             "Date":"2020/4/20",
-            "Policy":"Einige Geschäfte in Deutschland werden eröffnet."
+            "Policy":"Some stores are opened in Germany."
         },
         {
             "Date":"2020/4/27",
-            "Policy":"Maskenpflicht. Nur mit Mask kann man Geschäfte betreten und Verkehrsmittel nutzen."
+            "Policy":"Masks are compulsory. Only with mask you can enter stores and use means of transport."
         },
         {
             "Date":"2020/5/16",
-            "Policy":"In mehreren deutschen Städten kommt es zu Demonstrationen gegen die neuen Beschränkungen zur Verhütung der Coronavirus-Epidemie."
+            "Policy":"Demonstrations against the new restrictions to prevent the coronavirus epidemic occur in several German cities."
         },
         {
             "Date":"2020/6/15",
-            "Policy":"Deutschland öffnet seine Grenzen zu den Nachbarländern."
+            "Policy":"Germany opens its borders to neighboring countries."
         },
         {
             "Date":"2020/11/2",
-            "Policy":"Zweite Blockade. Eine vierwöchige Blockade."
+            "Policy":"Second blockade. A four-week blockade."
         }
     ],
 
     "DE-BB":[
         {
             "Date":"2020/3/12",
-            "Policy":"Rückkehrern aus bestimmten Risikogebieten, die das Betreten von öffentlichen Einrichtungen untersagt werden."
+            "Policy":"Returnees from certain risk areas to be prohibited from entering public facilities."
         },
         {
             "Date":"2020/3/18",
-            "Policy":"Brandenburg verfügt eine landesweite Schulschließung."
+            "Policy":"Brandenburg has a statewide school closure."
         },
         {
             "Date":"2020/3/23",
-            "Policy":"Bundeseinheitliches Kontaktverbot."
+            "Policy":"Federal no-contact rule."
         },
         {
             "Date":"2020/4/19",
-            "Policy":"Die SARS-CoV-2-Quarantäneverordnung wird zusätzlich erlassen."
+            "Policy":"The SARS-CoV-2 quarantine regulation is additionally issued."
         },
         {
             "Date":"2020/4/27",
-            "Policy":"Maskenpflicht."
+            "Policy":"Mask requirement."
         }
     ],
     
     "DE-BE":[
         {
             "Date":"2020/3/21",
-            "Policy":"Schließung von Gaststätten, Verbot touristischer Übernachtungen, Verbot von Versammlungen von mehr als zehn Personen sowie das Gebot, bei Kontakten mit Menschen einen Mindestabstand von 1,5 Metern einzuhalten."
+            "Policy":"Closure of restaurants, prohibition of tourist overnight stays, prohibition of gatherings of more than ten people, as well as the requirement to keep a minimum distance of 1.5 meters in contacts with people."
         },
         {
             "Date":"2020/4/9",
-            "Policy":"Neu Besuchsregelungen und Quarantäneregelungen."
+            "Policy":"New visiting regulations and quarantine regulations."
         },
         {
             "Date":"2020/4/16",
-            "Policy":"Verlängerung der Geltungsdauer der SARS-CoV-2-Eindämmungsmaßnahmenverordnung."
+            "Policy":"Extending the duration of the SARS-CoV-2 Containment Measures Order."
         },
         {
             "Date":"2020/6/23",
-            "Policy":"SARS-CoV-2-Eindämmungsmaßnahmenverordnung und Großveranstaltungsverbotsverordnung werden ersetzt."
+            "Policy":"SARS-CoV-2 Containment Measures Ordinance and Major Event Prohibition Ordinance are superseded."
         },
         {
             "Date":"2020/10/24",
-            "Policy":"Sperrstunde für Gaststätten und 5-Personen-Grenze im öffentlichen Raum im Freien von 23 Uhr bis 6 Uhr. Maskenpflicht auf Märkten."
+            "Policy":"Closing time for restaurants and 5-person limit in outdoor public spaces from 11 pm to 6 am. Mandatory wearing of masks at markets."
         },
         {
             "Date":"2020/10/27",
-            "Policy":"Maskenpflicht an einer Liste von weiteren Ort, Ausnahme für Personen auf Fahrzeugen außerhalb von Fußwegen."
+            "Policy":"Mask requirement at a list of additional location, exception for persons on vehicles outside of walkways."
         },
         {
             "Date":"2020/11/26",
-            "Policy":"Maskenpflicht auch auf Gehsteigen vor Geschäften."
+            "Policy":"Masks must also be worn on sidewalks in front of stores."
         }
     ],
 
     "DE-BW":[
         {
             "Date":"2020/3/17",
-            "Policy":"Einstellung des Betriebs an Schulen, Kindertageseinrichtungen und Kindertagespflegestellen."
+            "Policy":"Cessation of operations at schools, day care centers and day care centers."
         },
         {
             "Date":"2020/3/19",
-            "Policy":"Ein Nachtrag wird zum Staatshaushalt 2020/2021 verabschiedet. Dieser erlaubt die Aufnahme von Krediten über bis zu 5 Milliarden Euro, zur Deckung von Ausgaben im Zusammenhang mit der Pandemie."
+            "Policy":"An amendment is passed to the 2020/2021 state budget. This allows borrowing of up to 5 billion euros to cover pandemic-related expenses."
         },
         {
             "Date":"2020/4/10",
-            "Policy":"Zahnärztliche Behandlungen werden reglementiert, es ist nur die Behandlung von akuten Fällen gestattet."
+            "Policy":"Dental treatment is regulated, only treatment of acute cases is allowed."
         },
         {
             "Date":"2020/4/17",
-            "Policy":"Fünfte Verordnung der Landesregierung zur Änderung der Corona - Verordnung."
+            "Policy":"Fifth Ordinance of the Provincial Government amending the Corona - Ordinance."
         },
         {
             "Date":"2020/4/27",
-            "Policy":"Eine Pflicht zum Tragen von Alltagsmasken im Einzelhandel und im Nahverkehr."
+            "Policy":"A requirement to wear everyday masks in retail and mass transit."
         },
         {
             "Date":"2020/5/4",
-            "Policy":"Einzelhändler dürfen wieder vollständig öffnen, wobei als Richtgröße pro 20 Quadratmeter Ladenfläche je ein Kunde vorgesehen ist. Zahnärzte dürfen ihre Behandlungen wieder vollumfänglich durchführen."
+            "Policy":"Retailers are allowed to reopen fully, with a benchmark of one customer per 20 square meters of retail space. Dentists are once again allowed to carry out their treatments in full."
         },
         {
             "Date":"2020/5/11",
-            "Policy":"Treffen im öffentlichen Raum von zwei unterschiedlichen Hausständen dürfen wieder stattfinden."
+            "Policy":"Meetings in public space of two different households are allowed to take place again."
         },
         {
             "Date":"2020/5/27",
-            "Policy":"Treffen sind von bis zu zehn Personen im privaten Raum wieder erlaubt."
+            "Policy":"Meetings are again allowed of up to ten people in private."
         },
         {
             "Date":"2020/6/23",
-            "Policy":"Die Landesregierung hat eine neue Rechtsverordnung über infektionsschützende Maßnahmen beschlossen, die am 1. Juli 2020 in Kraft tritt."
+            "Policy":"The state government has approved a new legal regulation on infection control measures that will come into force on July 1, 2020."
         }
     ],
 
     "DE-BY":[
         {
             "Date":"2020/3/16",
-            "Policy":"Mit Bekanntmachung werden öffentliche Veranstaltungen und Versammlungen, der Betrieb sämtlicher Einrichtungen untersagt."
+            "Policy":"With notice, public events and meetings, the operation of all facilities are prohibited."
         },
         {
             "Date":"2020/4/23",
-            "Policy":"Großveranstaltungen werden bundesweit bis Ende August 2020 untersagt."
+            "Policy":"Large events will be banned nationwide until the end of August 2020."
         },
         {
             "Date":"2020/5/5",
-            "Policy":"Ministerpräsident Söder bekennt weitere Lockerungsbeschlüsse des bayerischen Kabinetts."
+            "Policy":"Prime Minister Söder confesses to further easing decisions of the Bavarian cabinet."
         },
         {
             "Date":"2020/6/16",
-            "Policy":"Erste Lockerungen für Veranstaltungen, die das Kabinett in seiner Sitzung beschloss."
+            "Policy":"First relaxations for events decided by the Cabinet in its meeting."
         },
         {
             "Date":"2020/7/1",
-            "Policy":"Bei Kulturveranstaltungen gilt die Pflicht zum Mund-Nasen-Schutz nur mehr, wenn man sich nicht an seinem Platz befindet."
+            "Policy":"At cultural events, the obligation to wear mouth-nose protection only applies when you are not in your seat."
         },
         {
             "Date":"2020/9/19",
-            "Policy":"Die „Sechste Bayerischen Infektionsschutzmaßnahmenverordnung“ wird im Bereich Sport geändert."
+            "Policy":"The \"Sixth Bavarian Infection Protection Measures Ordinance\" is amended in the area of sports."
         },
         {
             "Date":"2020/10/17",
-            "Policy":"Das bayerische Kabinett hat die Einführung eines „Ampelsystems“ auf Ebene der Landkreise beschlossen."
+            "Policy":"The Bavarian cabinet has decided to introduce a \"traffic light system\" at the district level."
         }
     ],
 
     "DE-HB":[
         {
             "Date":"2020/3/16",
-            "Policy":"Schulschließung."
+            "Policy":"School Closure."
         },
         {
             "Date":"2020/3/17",
-            "Policy":"Das Land Bremen untersagt Betrieb von Freizeit-, Vergnügungs-, Sport- und Tourismusstätten sowie von Einzelhandelsgeschäften, die keine Waren des täglichen Bedarfs vertreiben."
+            "Policy":"The state of Bremen prohibits the operation of recreational, amusement, sports and tourist facilities, as well as retail outlets that do not sell everyday goods."
         },
         {
             "Date":"2020/4/27",
-            "Policy":"Maskenpflicht."
+            "Policy":"Mask requirement."
         },
         {
             "Date":"2020/8/25",
-            "Policy":"Die Bremische Bürgerschaft erlässt eine neue Verordnung zu Corona und dem weiteren Vorgehen."
+            "Policy":"The Bremen Parliament issues a new ordinance on Corona and the further procedure."
         }
     ],
 
     "DE-HE":[
         {
             "Date":"2020/3/11",
-            "Policy":"Hessen aktiviert den Pandemieplan, der in 2007 verabschiedet wurde und seither nicht mehr aktualisiert wurde."
+            "Policy":"Hesse activates the pandemic plan, which was adopted in 2007 and has not been updated since."
         },
         {
             "Date":"2020/4/10",
-            "Policy":"Einreisebeschränkungen treten in Hessen und damit auch am Flughafen Frankfurt in Kraft, wonach sich Einreisende in eine 14-tägige Quarantäne begeben müssen."
+            "Policy":"Entry restrictions come into force in Hesse and thus also at Frankfurt Airport, according to which entrants must undergo a 14-day quarantine."
         },
         {
             "Date":"2020/4/27",
@@ -185,54 +185,54 @@ export const PolicyData =[
         },
         {
             "Date":"2020/5/7",
-            "Policy":"Die Landesregierung kündigt weitere Lockerungen an."
+            "Policy":"The state government announces further relaxations."
         },
         {
             "Date":"2020/5/15",
-            "Policy":"Viele Gastronomiebetriebe und das Hotelgewerbe dürfen wieder öffnen."
+            "Policy":"Many catering establishments and the hotel industry are allowed to reopen."
         },
         {
             "Date":"2020/7/3",
-            "Policy":"Weitere Lockerungen werden bezüglich des Aufenthaltes im Freien, möglichen Versammlungen und dem Besuch in Krankenhäusern beschlossen."
+            "Policy":"Further relaxations are adopted regarding being outdoors, possible gatherings and visiting hospitals."
         },
         {
             "Date":"2020/8/4",
-            "Policy":"Hessen erlässt infolge der gestiegenen Zahlen neue Regeln für den Sport und Aufenthalt im Freien, deshalb herrscht es ab sofort ein Grillverbot."
+            "Policy":"As a result of the increased numbers, Hesse is issuing new rules for outdoor sports and stays, so there is a barbecue ban with immediate effect."
         },
         {
             "Date":"2020/9/30",
-            "Policy":"Infolge ansteigender Zahlen wird entschieden, eine bundesweite Warnampel, ähnlich das hessische Modell einzuführen."
+            "Policy":"As a result of increasing numbers, it is decided to introduce a nationwide warning traffic light, similar to the Hessian model."
         },
         {
             "Date":"2020/10/4",
-            "Policy":"Es gibt einen neuen Hygieneplan für die Schulen."
+            "Policy":"There is a new hygiene plan for the schools."
         }
     ],
 
     "DE-HH":[
         {
             "Date":"2020/3/10",
-            "Policy":"Es wird empfohlen, alle Rückkehrer aus stark betroffenen Gebieten 14 Tage lang zu Hause zu isolieren. Die Mitarbeitern des Unternehmens werden empfohlen, von zu Hause aus zu arbeiten."
+            "Policy":"It is recommended that all returnees from severely affected areas be isolated at home for 14 days. Company employees are advised to work from home."
         },
         {
             "Date":"2020/4/20",
-            "Policy":"Die Wiederaufnahme des Unterrichts an Hochschulen und Universitäten erfolgt hauptsächlich in Form von Online-Unterricht."
+            "Policy":"The resumption of classes at colleges and universities is mainly in the form of online classes."
         },
         {
             "Date":"2020/5/4",
-            "Policy":"Geschäfte unter 800 Quadratmetern dürfen betrieben werden, und Geschäfte über 800 Quadratmetern dürfen nach Reduzierung der Fläche betrieben werden. Das Restaurant bleibt geschlossen."
+            "Policy":"Stores under 800 square feet may operate, and stores over 800 square feet may operate after reducing the square footage. The restaurant remains closed."
         },
         {
             "Date":"2020/5/6",
-            "Policy":"Bibliotheken, Museen, Autotheater, Teile von Zoos und botanischen Gärten im Freien, Sportstätten außerhalb der Gruppe usw. können wiedereröffnet werden."
+            "Policy":"Libraries, museums, car theaters, parts of outdoor zoos and botanical gardens, sports facilities outside the group, etc. can be reopened."
         },
         {
             "Date":"2020/6/15",
-            "Policy":"Die Anzahl der Besuche in Pflegeheimen hat sich von 1 Stunde auf 3 Stunden pro Woche erhöht, und die Anzahl der Besuche wird von nur einer Person auf nahe Verwandte gelockert."
+            "Policy":"The number of visits to nursing homes has increased from 1 hour to 3 hours per week, and the number of visits is relaxed from only one person to close relatives."
         },
         {
             "Date":"2020/7/1",
-            "Policy":"Stadttheater, Konzertsäle usw. können unter der Voraussetzung wiedereröffnet werden, dass die Bedingungen für Hygiene und Epidemie Prävention erfüllt werden. Alle Schwimmbäder dürfen geöffnet sein und Sauna und Dampfbad bleiben geschlossen. Bars und Tanzlokale bleiben geschlossen."
+            "Policy":"Municipal theaters, concert halls, etc. may be reopened provided that the conditions for hygiene and epidemic prevention are met. All swimming pools may be open and sauna and steam baths remain closed. Bars and dance halls remain closed."
         }
 
     ],
@@ -240,50 +240,50 @@ export const PolicyData =[
     "DE-MV":[
         {
             "Date":"2020/3/14",
-            "Policy":"Veranstaltungen mit mehr als 50 Teilnehmenden sind bis auf Weiteres untersagt. Veranstaltungen mit weniger als 50 Teilnehmenden sind nur dann durchzuführen, sofern sie zwingend notwendig sind."
+            "Policy":"Events with more than 50 participants are prohibited until further notice. Events with less than 50 participants are only to be held if they are absolutely necessary."
         },
         {
             "Date":"2020/4/16",
-            "Policy":"Glawe fordert flächendeckende Abstriche in Pflegeheimen und in ambulanter Pflege."
+            "Policy":"Glawe is calling for across-the-board cuts in nursing homes and outpatient care."
         },
         {
             "Date":"2020/5/5",
-            "Policy":"Die Öffnungen sind unter bestimmten Auflagen möglich. Das gilt vor allem für Betriebe des Heilmittel Bereiches und Dienstleistungsbetriebe im Bereich der Körperpflege, bei denen eine körperliche Nähe unabdingbar ist."
+            "Policy":"The openings are possible under certain conditions. This applies above all to businesses in the therapeutic products sector and service businesses in the personal care sector, where physical proximity is essential."
         },
         {
             "Date":"2020/6/12",
-            "Policy":"Gäste aus dem europäischen Ausland dürfen in MV wieder Urlaub machen."
+            "Policy":"Guests from other European countries are once again allowed to vacation in MV."
         },
         {
             "Date":"2020/9/4",
-            "Policy":"In Mecklenburg-Vorpommern wird ab dem 04. September der Tagestourismus wieder erlaubt."
+            "Policy":"In Mecklenburg-Western Pomerania, day tourism will be allowed again from 04 September."
         },
         {
             "Date":"2020/10/21",
-            "Policy":"Änderungen für Einreise und Quarantäne sind in Kraft getreten."
+            "Policy":"Changes for entry and quarantine have entered into force."
         }
     ],
 
     "DE-NI":[
         {
             "Date":"2020/3/16",
-            "Policy":"Schulen, Hochschulen und Kindertagesstätte werden geschlossen."
+            "Policy":"Schools, colleges and day care center will be closed."
         },
         {
             "Date":"2020/3/23",
-            "Policy":"Niedersachsen setzt das Kontaktverbot in einer Allgemeinverfügung um."
+            "Policy":"Lower Saxony implements the contact ban in a general decree."
         },
         {
             "Date":"2020/4/2",
-            "Policy":"Das Niedersächsische Sozialministerium erlässt die Niedersächsische Verordnung über die Beschränkung sozialer Kontakte."
+            "Policy":"The Lower Saxony Ministry of Social Affairs issues the Lower Saxony Ordinance on the Restriction of Social Contacts."
         },
         {
             "Date":"2020/4/20",
-            "Policy":"Einzelhandelsgeschäfte dürfen den Geschäftsbetrieb wieder aufnehmen, deren Verkaufsfläche nicht mehr als 800 m² beträgt und die in der Lage sind, die Einhaltung der hygienischen Auflagen der Behörden, insbesondere des Abstandsgebots, zu garantieren."
+            "Policy":"Retail stores may resume business operations whose sales area does not exceed 800 m² and which are able to guarantee compliance with the hygienic requirements of the authorities, in particular the distance requirement."
         },
         {
             "Date":"2020/5/11",
-            "Policy":"Weitere Lockerungen treten in Kraft. Museen und andere Kultureinrichtungen sowie zoologische Gärten können wieder öffnen."
+            "Policy":"Further relaxations come into force. Museums and other cultural institutions as well as zoological gardens can reopen."
         }
 
     ],
@@ -291,15 +291,15 @@ export const PolicyData =[
     "DE-NW":[
         {
             "Date":"2020/3/16",
-            "Policy":"Die Landesregierung hat beschlossen, den Unterricht an allen Schulen einzustellen."
+            "Policy":"The state government has decided to stop classes at all schools."
         },
         {
             "Date":"2020/3/17",
-            "Policy":"Seit dem 17. März stellen alle Fitnessstudios, Schwimmbäder und Saunen des Staates ihren Betrieb ein. Es ist verboten, an Amateurhochschulen, Musikschulen und anderen öffentlichen und privaten Bildungseinrichtungen teilzunehmen."
+            "Policy":"Since March 17, all gyms, swimming pools and saunas in the state cease operation. It is forbidden to attend amateur colleges, music schools and other public and private educational institutions."
         },
         {
             "Date":"2020/4/20",
-            "Policy":"Die Mittelschulen in Nordrhein-Westfalen eröffnen zunächst wieder. Seit dem 20. April 2020 sind alle Buchhandlungen, Zoofachgeschäfte, Baumaterial- und Gartenmärkte sowie ähnliche Fachgeschäfte mit Ausnahme der derzeit geöffneten Geschäftsräume verfügbar."
+            "Policy":"Middle schools in North Rhine-Westphalia will reopen for the time being. Since April 20, 2020, all bookstores, pet stores, home improvement and garden centers, and similar specialty stores have been available, with the exception of those currently open for business."
         }
 
     ],
@@ -307,31 +307,31 @@ export const PolicyData =[
     "DE-RP":[
         {
             "Date":"2020/3/16",
-            "Policy":"Veranstaltungen mit mehr als 75 Teilnehmenden mit Ausnahme des Besuchs von Bildungseinrichtungen werden verboten. Regulärer Schulbetrieb wird befristet eingestellt. Notfall-Betreuung wird sichergestellt. Verstärkung Intensivbetten."
+            "Policy":"Events with more than 75 participants with the exception of visiting educational institutions will be prohibited. Regular school operations will be temporarily suspended. Emergency care will be provided. Reinforcement of intensive care beds."
         },
         {
             "Date":"2020/4/8",
-            "Policy":"Gemäß der Musterverordnung der Bundesregierung gilt für einreisende und zurückkehrende Personen weiterhin eine zweiwöchige Quarantäne."
+            "Policy":"According to the federal government's model regulation, a two-week quarantine period continues to apply to inbound and returning individuals."
         },
         {
             "Date":"2020/5/11",
-            "Policy":"Museen und Galerien werden wieder erlaubt."
+            "Policy":"Museums and galleries will be allowed again."
         },
         {
             "Date":"2020/5/27",
-            "Policy":"Kinos, Theater, Kleinkunstbühnen und Konzerthallen sollen ab dem 27. Mai unter Auflagen öffnen."
+            "Policy":"Cinemas, theaters, cabarets and concert halls are to open from May 27, subject to conditions."
         },
         {
             "Date":"2020/6/10",
-            "Policy":"Freizeitparks und Messen dürfen ab dem 10. Juni wieder öffnen."
+            "Policy":"Amusement parks and fairs may reopen from June 10."
         },
         {
             "Date":"2020/7/1",
-            "Policy":"Im öffentlichen Raum dürfen sich bis zu 10 Menschen unabhängig von der Zahl der Haushalte treffen."
+            "Policy":"Up to 10 people are allowed to meet in the public space regardless of the number of households."
         },
         {
             "Date":"2020/8/20",
-            "Policy":"Die 10. Corona-Bekämpfungsverordnung soll daher über den 31. August 2020 hinaus bis zum 15. September 2020 verlängert werden."
+            "Policy":"Therefore, the 10th Corona Control Ordinance should be extended beyond August 31, 2020, to September 15, 2020."
         }
 
     ],
@@ -339,46 +339,46 @@ export const PolicyData =[
     "DE-SH":[
         {
             "Date":"2020/3/10",
-            "Policy":"Alle Personen, die aus stark betroffenen Gebieten des Staates zurückkehren, dürfen innerhalb von 14 Tagen keine Kindergärten, Grund- und weiterführenden Schulen, Universitäten, Krankenhäuser, Pflegeheime und andere Orte betreten. Zuwiderhandlungen werden mit einer Geldstrafe von bis zu 25.000 Euro geahndet."
+            "Policy":"All persons returning from severely affected areas of the state are prohibited from entering kindergartens, primary and secondary schools, universities, hospitals, nursing homes and other places within 14 days. Violators will be fined up to 25,000 euros."
         },
         {
             "Date":"2020/3/17",
-            "Policy":"Die Nordsee- und Ostsee Inseln werden geschlossen."
+            "Policy":"The North Sea and Baltic Sea islands are closed."
         },
         {
             "Date":"2020/5/4",
-            "Policy":"Nicht-Anwohner, die ein zweites Zuhause in Schleswig-Holstein besitzen, können das Land betreten."
+            "Policy":"Non-residents who own a second home in Schleswig-Holstein may enter the state."
         },
         {
             "Date":"2020/5/9",
-            "Policy":"Das Kontaktverbot wird gelockert und Mitglieder aus zwei Familien können sich versammeln. Geschäfte über 800 Quadratmeter werden das Geschäft wieder aufnehmen."
+            "Policy":"The ban on contact is relaxed and members from two families can gather. Stores over 800 square meters will resume business."
         },
         {
             "Date":"2020/6/1",
-            "Policy":"Ein Teil des Kindergartens hat den normalen Betrieb mit einer Treuhand Quote von ca. 55% wieder aufgenommen."
+            "Policy":"Part of the kindergarten has resumed normal operations with a trust ratio of approximately 55%."
         }
     ],
 
     "DE-SL":[
         {
             "Date":"2020/5/6",
-            "Policy":"Die Kontakt-Beschränkungen für die Bürger im öffentlichen Raum werden zur Eindämmung des Coronavirus grundsätzlich bis 5. Juni verlängert."
+            "Policy":"Contact restrictions for citizens in public areas are basically extended until June 5 to contain the coronavirus."
         },
         {
             "Date":"2020/5/8",
-            "Policy":"Ab Freitag (8. Mai 2020) ist der Baumwipfelpfad an der Saarschleife wieder für Besucherinnen und Besucher geöffnet."
+            "Policy":"From Friday (May 8, 2020), the tree top walk at the Saarschleife is open again for visitors."
         },
         {
             "Date":"2020/6/15",
-            "Policy":"Bei Veranstaltungen in geschlossenen Räumen dürfen wieder 50 Personen und unter freiem Himmel bis zu 100 Personen zusammenkommen."
+            "Policy":"Events indoors may again gather 50 people and outdoors up to 100 people."
         },
         {
             "Date":"2020/8/11",
-            "Policy":"Großveranstaltungen, bspw. mit mehr als 1000 Teilnehmerinnen und Teilnehmern werden vorerst bis Ende Oktober untersagt. Veranstaltungen mit mehr als 20 anwesenden Personen sind unter Angabe des Veranstalters der Ortspolizeibehörde zu melden."
+            "Policy":"Large events, e.g. with more than 1000 participants, are prohibited for the time being until the end of October. Events with more than 20 people present are to be reported to the local police authority with details of the organizer."
         },
         {
             "Date":"2020/11/13",
-            "Policy":"Besuchsmöglichkeiten in Senioreneinrichtungen können derzeit nicht ausgeweitet werden."
+            "Policy":"Visitation opportunities in senior facilities cannot be expanded at this time."
         }
 
     ],
@@ -386,35 +386,35 @@ export const PolicyData =[
     "DE-SN":[
         {
             "Date":"2020/3/16",
-            "Policy":"Heute hat die Staatsregierung beschlossen: Kitas und Schulen bleiben ab Mittwoch (18.03.) in Sachsen geschlossen."
+            "Policy":"Today, the state government has decided: Kitas and schools will be closed from Wednesday (18.03.) in Saxony."
         },
         {
             "Date":"2020/4/15",
-            "Policy":"Mitte April legt Sachsen dann fest, dass beim Einkaufen und in Bus und Bahn ein Mund-Nasen-Schutz getragen werden muss."
+            "Policy":"Then, in mid-April, Saxony stipulates that mouth-nose protection must be worn when shopping and on buses and trains."
         },
         {
             "Date":"2020/5/8",
-            "Policy":"Ab dem 18. Mai öffnen Kitas und Schulen wieder."
+            "Policy":"Daycare centers and schools reopen on May 18."
         },
         {
             "Date":"2020/6/3",
-            "Policy":"Heute hat die Landesregierung die neue Corona-Schutz-Verordnung mit weitreichenden Lockerungen ab 6. Juni beschlossen."
+            "Policy":"Today, the state government approved the new Corona Protection Ordinance with sweeping relaxations starting June 6."
         },
         {
             "Date":"2020/7/13",
-            "Policy":"Sachsens Schulen sollen nach den Sommerferien wieder im Normalbetrieb unter Pandemie-Bedingungen starten."
+            "Policy":"Saxony's schools are to resume normal operations under pandemic conditions after the summer vacations."
         },
         {
             "Date":"2020/8/14",
-            "Policy":"Kostenlose Corona-Tests sind ab sofort auch an Sachsens Autobahnen möglich."
+            "Policy":"Free Corona tests are now also available on Saxony's highways."
         },
         {
             "Date":"2020/9/1",
-            "Policy":"Neue Corona-Lockerungen in Sachsen, was im September und Oktober gilt. Diese Aspekte sind beteiligt, inklusive Familie und Freunde, Feiern, Besuchsverbot, Großveranstaltungen, Schule, Hort usw."
+            "Policy":"New Corona relaxations in Saxony, which applies in September and October. These aspects are involved, including family and friends, celebrations, visitation ban, major events, school, after-school care, etc.."
         },
         {
             "Date":"2020/11/17",
-            "Policy":"Hygiene-Allgemeinverfügung ist geändert: Pflicht zum Tragen einer Mund-Nasen-Bedeckung ausgeweitet."
+            "Policy":"Hygiene general order is amended: Requirement to wear mouth-to-nose covering extended."
         }
 
     ],
@@ -422,42 +422,42 @@ export const PolicyData =[
     "DE-ST":[
         {
             "Date":"2020/3/5",
-            "Policy":"Schutz von Kindern und Jugendlichen in (teil-) stationären Einrichtungen. Die personelle Situation wird aktualisiert."
+            "Policy":"Protection of children and adolescents in (partially) residential facilities. The personnel situation is updated."
         },
         {
             "Date":"2020/5/11",
-            "Policy":"Einrichtungen der Altenhilfe sind ab dem 11.05.2020 wieder für Besucherinnen und Besucher zugänglich zu machen."
+            "Policy":"Facilities providing assistance to the elderly shall be reopened to visitors on or after May 11, 2020."
         },
         {
             "Date":"2020/8/27",
-            "Policy":"Ab dem gibt es die Wiederaufnahme des Regelbetriebs in Kindertageseinrichtungen des Landes Sachsen-Anhalt unter Bedingungen der Pandemie."
+            "Policy":"As of this date, daycare centers in the state of Saxony-Anhalt will resume regular operations under pandemic conditions."
         },
         {
             "Date":"2020/11/9",
-            "Policy":"Aktualisierte Empfehlungen zu Hygienemaßnahmen in Kindertageseinrichtungen des Landes Sachsen-​Anhalt werden vom 09. November 2020 veröffentlicht."
+            "Policy":"Updated recommendations on hygiene measures in day care facilities for children in the state of Saxony-Anhalt will be published from 09 November 2020."
         },
         {
             "Date":"2020/11/26",
-            "Policy":"Ab sofort können von Schließungen betroffene Unternehmen, Betriebe, Vereine und Einrichtungen und Soloselbstständige die sogenannte Corona-​Novemberhilfe beantragen."
+            "Policy":"As of now, companies, businesses, associations and institutions and solo self-employed persons affected by closures can apply for the so-called Corona November Assistance."
         }
     ],
 
     "DE-TH":[
         {
             "Date":"2020/3/24",
-            "Policy":"In Thüringen gilt seit Ende März eine einheitliche Regelung, die den direkten Kontakt zwischen Menschen drastisch einschränken soll."
+            "Policy":"In Thuringia, a uniform regulation has been in effect since the end of March, which is intended to drastically restrict direct contact between people."
         },
         {
             "Date":"2020/4/22",
-            "Policy":"Versammlungen, Demos und Gottesdienste sind ab dem 23.04.2020 möglich."
+            "Policy":"Meetings, demos and religious services are possible from 23.04.2020."
         },
         {
             "Date":"2020/6/13",
-            "Policy":"Erstes Bundesland ohne Kontakt Begrenzung. Treffen in großer Runde sind seit Samstag in Thüringen wieder möglich - allerdings immer noch mit Abstand."
+            "Policy":"First state without contact limit. Meetings in large groups have been possible again in Thuringia since Saturday - but still at a distance."
         },
         {
             "Date":"2020/8/26",
-            "Policy":"Hilfe für Studierende sind verlängert. Studentinnen und Studenten steht die Möglichkeit offen, ein in der Startphase zinsloses Darlehen bei der Kreditanstalt für Wiederaufbau (KfW) zu beantragen - auf Basis des langbewährten KfW-Studienkredits."
+            "Policy":"Help for students are extended. Students have the option of applying for an interest-free loan from the Kreditanstalt für Wiederaufbau (KfW) during the start-up phase - based on the long-proven KfW Student Loan."
         }
     ]
 } 

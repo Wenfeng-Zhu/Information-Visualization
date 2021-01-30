@@ -15,7 +15,6 @@ class EpidemicMap extends Component {
         this.props.onFocusStateChange(e, target);
     }
 
-
     componentDidMount() {
         let data = MapData;
         let width = GeoData.width;
@@ -44,7 +43,6 @@ class EpidemicMap extends Component {
             .rotate([rotLong, 0, 0])
             .translate([width / 2, height / 2])
             .scale(scaleFactor * 0.975 * 1000)
-            //.scale(4*1000)  //1000 is default for USA map
             .center(center);
 
         this.geoPath = d3.geoPath().projection(projection);
