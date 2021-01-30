@@ -33,6 +33,9 @@ Then open the http://localhost:3000/ (Express: http://localhost:9000) to run the
 # Feature Description(React Version)
 The website has a total of five interfaces, and the front-end routing method is used to achieve interface jumps, and does not involve back-end data interaction.
 ## Home Page:
+Homepage             |  Homepage-Navbar
+:-------------------------:|:-------------------------:
+![](https://github.com/Wenfeng-Zhu/Information-Visualization/blob/master/img/React%20Version-Homepage-1.PNG)  |  ![](https://github.com/Wenfeng-Zhu/Information-Visualization/blob/master/img/React%20Version-Homepage-Navbar.PNG)
 ### Epidemic Map  
 - Color based on the epidemic situation and mousemove
 - Zoom function based on mouse click 
@@ -48,12 +51,17 @@ The website has a total of five interfaces, and the front-end routing method is 
 - The epidemic data of all of Germany is displayed by default.
 - With horizontal axis zoom (time) function.
 
+Homepage-Heatmap             |  Homepage-Heatmap-3D
+:-------------------------:|:-------------------------:
+![](https://github.com/Wenfeng-Zhu/Information-Visualization/blob/master/img/React%20Version-Homepage-2.PNG)  |  ![](https://github.com/Wenfeng-Zhu/Information-Visualization/blob/master/img/React%20Version-Homepage-3.PNG)
+
 ### Heatmap
 - Displays the daily data new cases of each state in germany 
 - Provide **2D** and **3D** versions of Heatmap.
 - The heat map can be **dragged** and **zoomed** with the mouse to facilitate observation from different angles.
 
 ## Policies Page:
+![](https://github.com/Wenfeng-Zhu/Information-Visualization/blob/master/img/React%20Version-PoliciesPage.PNG)
 ### Epidemic Map
 -same as Home Page
 ### Line Chart
@@ -66,14 +74,23 @@ The website has a total of five interfaces, and the front-end routing method is 
 - By default, the guidance information that guides the user to click on the scattered points is displayed.
 - After the user clicks on a scatter point, the corresponding policy information is displayed.
 
+
+
 ## Population and Economy Page
 - Pie chart based on polar coordinates。
 - The user can select the corresponding month data.
 - The pie chart ratio represents the corresponding population density or GDP per capita, and the polar coordinate represents the average number of new infections per state in the current month.
 - The zoom function through  the mouse wheel.
 
+
+PopulationPage             |  EconomyPage
+:-------------------------:|:-------------------------:
+![](https://github.com/Wenfeng-Zhu/Information-Visualization/blob/master/img/React%20Version-PopulationPage.PNG)  |  ![](https://github.com/Wenfeng-Zhu/Information-Visualization/blob/master/img/React%20Version-EconomyPage.PNG)
+
 ## Infor Page
 - Brief introduction of the project and members.
 
+![](https://github.com/Wenfeng-Zhu/Information-Visualization/blob/master/img/React%20Version-InformationPage.PNG)
+
 # Project Process
-![project process](https://github.com/Wenfeng-Zhu/Information-Visualization/blob/master/ProjectProcess.png)
+![project process](https://github.com/Wenfeng-Zhu/Information-Visualization/blob/master/img/ProjectProcess.png)
