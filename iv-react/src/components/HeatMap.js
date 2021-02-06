@@ -20,7 +20,7 @@ export class HeatMap extends Component {
             title: {
                 top: 30,
                 left: 'center',
-                text: 'Weekly New Cases of each State'
+                text: 'Daily New Cases of each State'
             },
             tooltip: {
                 title: "Weekly New Cases of each State ",
@@ -70,7 +70,7 @@ export class HeatMap extends Component {
 
             },
             series: [{
-                name: 'Weekly New Cases',
+                name: 'Daily New Cases',
                 type: 'heatmap',
                 data: function () {
                     let allWeek = [];
@@ -104,7 +104,7 @@ export class HeatMap extends Component {
             title: {
                 top: 30,
                 left: 'center',
-                text: 'Weekly New Cases of each State'
+                text: 'Daily New Cases of each State'
             },
             grid: {
                 top: '10%',
@@ -189,7 +189,7 @@ export class HeatMap extends Component {
             },
             series: [{
                 type: 'bar3D',
-                name: 'Weekly New Cases',
+                name: 'Daily New Cases',
                 data: function () {
                     let allData = [];
                     let start = 0;
